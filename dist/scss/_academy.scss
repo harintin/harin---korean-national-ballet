@@ -160,9 +160,11 @@
 
 // 아카데미 강좌 및 등록안내
 
+// 학생반 왼쪽 상단
+
 .academy-class-wrap {
-  padding-left: 110px;
-  width: 1200px;
+  padding-left: 160px;
+  width: 1300px;
   .academy-class-student {
     display: flex;
     .student-left-top {
@@ -176,7 +178,7 @@
           text-align: center;
           color: $mc;
           font-family: Pretendard;
-          font-size: 20px;
+          font-size: $p;
           font-style: normal;
           font-weight: 700;
         }
@@ -193,6 +195,7 @@
         background: $mc;
       }
       .class-lst {
+        margin-bottom: 60px;
         li {
           display: flex;
           justify-content: flex-start;
@@ -205,6 +208,192 @@
             font-style: normal;
             font-weight: 400;
           }
+        }
+      }
+      .class-lst-2 {
+        li {
+          margin: 15px 0px;
+          .class-lst-miniwrap {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            h6 {
+              padding-left: 20px;
+              margin-bottom: 10px;
+              font-family: Pretendard;
+              font-size: $d2;
+              font-style: normal;
+              font-weight: 700;
+            }
+          }
+          p {
+            padding-left: 35px;
+            font-family: Pretendard;
+            font-size: $ps;
+            font-style: normal;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    // 학생반 우측 상단
+
+    .student-right-top {
+      padding-top: 20px;
+      padding-left: 100px;
+      .class-bbs {
+        li {
+          h5 {
+            margin-bottom: 15px;
+            font-family: Pretendard;
+            font-size: $d1;
+            font-style: normal;
+            font-weight: 700;
+          }
+          p {
+            margin-bottom: 30px;
+            font-family: Pretendard;
+            font-size: $ps;
+            font-style: normal;
+            font-weight: 400;
+          }
+          .class-tb {
+            margin-top: 20px;
+            li {
+              padding: 20px;
+              padding-bottom: 50px;
+              display: flex;
+              justify-content: space-between;
+              align-items: baseline;
+              width: 540px;
+              height: 50px;
+              border-bottom: 1px solid $mc;
+              h6 {
+                color: $mc;
+                font-family: Pretendard;
+                font-size: $p;
+                font-style: normal;
+                font-weight: 700;
+              }
+              span {
+                display: flex;
+                color: $b;
+                font-family: Pretendard;
+                font-size: $pss;
+                font-style: normal;
+                font-weight: 400;
+              }
+              p {
+                display: block;
+                font-family: Pretendard;
+                font-size: $ps;
+                font-style: normal;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 성인반
+
+.academy-class-adult {
+  margin-top: 150px;
+  display: flex;
+  .student-left-top {
+    .academy-tit-icon {
+      width: 130px;
+      padding: 12px 28px;
+      border: 1px solid $mc;
+      border-radius: 50px;
+      box-sizing: border-box;
+      h4 {
+        text-align: center;
+        color: $mc;
+        font-family: Pretendard;
+        font-size: $p;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+    .ms-line {
+      width: 540px;
+      height: 1px;
+      background: $mc;
+      margin: 40px 0;
+    }
+    .mss-line {
+      width: 16px;
+      height: 1px;
+      background: $mc;
+    }
+    .class-lst {
+      margin-bottom: 60px;
+      li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 15px 0px;
+        p {
+          padding-left: 20px;
+          font-family: Pretendard;
+          font-size: $ps;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+    }
+    .class-lst-2 {
+      li {
+        margin: 15px 0px;
+        .class-lst-miniwrap {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          h6 {
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-family: Pretendard;
+            font-size: $d2;
+            font-style: normal;
+            font-weight: 700;
+          }
+        }
+        p {
+          padding-left: 35px;
+          font-family: Pretendard;
+          font-size: $ps;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  // 성인반 우측 상단
+  .student-right-top {
+    padding-top: 20px;
+    padding-left: 100px;
+    .class-bbs {
+      li {
+        h5 {
+          color: $txtDefult;
+          margin-bottom: 15px;
+          font-family: Pretendard;
+          font-size: $d1;
+          font-style: normal;
+          font-weight: 700;
+        }
+        p {
+          margin-bottom: 30px;
+          font-family: Pretendard;
+          font-size: $ps;
+          font-style: normal;
+          font-weight: 400;
         }
       }
     }
