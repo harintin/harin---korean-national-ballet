@@ -69,7 +69,7 @@
         border: none;
         outline: none;
         &::placeholder {
-          color: #9d9d9d;
+          color: $gray-9;
           font-family: Pretendard;
           font-size: 14px;
           font-style: normal;
@@ -85,7 +85,7 @@
         border: none;
         outline: none;
         &::placeholder {
-          color: #9d9d9d;
+          color: $gray-9;
           font-family: Pretendard;
           font-size: 14px;
           font-style: normal;
@@ -102,7 +102,7 @@
         outline: none;
 
         &::placeholder {
-          color: #9d9d9d;
+          color: $gray-9;
           font-family: Pretendard;
           font-size: 14px;
           font-style: normal;
@@ -114,13 +114,13 @@
         width: 264px;
         height: 53px;
         border-radius: 26.5px;
-        border: 2px solid #7d2426;
+        border: 2px solid $mc;
         background: #fff;
 
         p {
           margin: 0;
           text-align: center;
-          color: #7d2426;
+          color: $mc;
           font-family: Pretendard;
           font-size: 20px;
           font-style: normal;
@@ -133,6 +133,7 @@
 
   // 공연정보
   #info {
+    position: relative;
     .info-wrap {
       position: relative;
       overflow: hidden;
@@ -143,7 +144,7 @@
         margin-bottom: 37px;
         /* Pretendard/bold-36 */
         font-family: Pretendard;
-        font-size: 36px;
+        font-size: $h3;
         font-style: normal;
         font-weight: 700;
         line-height: 120%;
@@ -225,23 +226,55 @@
         .info-perform-slide {
           position: absolute;
           top: 135px;
-          right: -80px;
+          right: -100px;
           display: flex;
           width: 900px;
           height: 400px;
-          // background: #000;
-          & .info-perform-slide-lst {
-            margin: 0 10px;
-          }
         }
       }
       // 공연정보 슬라이드
+      .swiper-wrapper {
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .swiper-pagination {
+      position: absolute;
+      top: 360px;
+      left: -620px;
+      width: 100px;
+      height: 50px;
+    }
+    .swiper-pagination-bullet {
+      background: $w !important;
     }
   }
 
   // 발레단소개 & 공지사항
   #bbs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
     padding: 0 108px;
+    margin-bottom: 194px;
+
+    // 발레단소개 영역
     .bbs-introduce {
       width: 580px;
       height: 484px;
@@ -254,7 +287,7 @@
           color: $b;
           /* Pretendard/bold-36 */
           font-family: Pretendard;
-          font-size: 36px;
+          font-size: $h3;
           font-style: normal;
           font-weight: 700;
           line-height: 120%; /* 43.2px */
@@ -262,7 +295,7 @@
         & p {
           position: relative;
           padding-right: 20px;
-          color: #333;
+          color: $txtDefult;
           /* Pretendard/regular-15 */
           font-family: Pretendard;
           font-size: 15px;
@@ -285,5 +318,111 @@
         width: 100%;
       }
     }
+    // 공지사항 영역
+    .bbs-notice {
+      width: 580px;
+      height: 484px;
+      & .bbs-notice-tit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        & h3 {
+          color: $b;
+          /* Pretendard/bold-36 */
+          font-family: Pretendard;
+          font-size: $h3;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%; /* 43.2px */
+        }
+        & p {
+          position: relative;
+          padding-right: 20px;
+          color: $txtDefult;
+          /* Pretendard/regular-15 */
+          font-family: Pretendard;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        & p::after {
+          content: ">";
+          position: absolute;
+          top: 0;
+          left: 78px;
+          right: 0;
+          bottom: 0;
+        }
+      }
+
+      .bbs-notice-txt {
+        & .bold-line {
+          width: 100%;
+          height: 1px;
+          background-color: $line-bold;
+          margin-bottom: 38px;
+        }
+        & .normal-line {
+          width: 100%;
+          height: 1px;
+          background-color: $line-normal;
+          margin-bottom: 38px;
+        }
+        & .notice {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 38px;
+          & .notice-icon {
+            width: 11%;
+            height: 26px;
+            color: $w;
+            padding: 3px;
+            border-radius: 7px;
+            text-align: center;
+            background: $txtDefult;
+            font-family: Pretendard;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+          }
+          & .notice-txt {
+            display: flex;
+            width: 70%;
+            a {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            & a {
+              text-align: left;
+              color: $b;
+              font-family: Pretendard;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+            }
+          }
+          & .notice-date {
+            width: 10%;
+            color: $txtDefult;
+            text-align: right;
+            font-family: Pretendard;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+  #youtube {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 194px;
   }
 }

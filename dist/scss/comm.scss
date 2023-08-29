@@ -1,17 +1,19 @@
 @charset "UFT-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents";
+@import "variables", "mixin", "fonts", "reset", "main", "contents", "introduce",
+  "perform", "information", "academy";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
 // 공통
+
 .container {
   width: calc(100%);
   padding: 0 0 0 400px;
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   background: $w;
 }
 
@@ -29,7 +31,7 @@ body {
     #logo {
       position: absolute;
       top: 90px;
-      left: 70px;
+      left: 85px;
 
       a {
         display: block;
@@ -45,35 +47,58 @@ body {
       // depth 1
 
       .depth1-lst {
-        a {
+        overflow: hidden;
+        & a {
           display: block;
           padding: 20px 0;
-          color: #333333;
+          color: $titDefult;
           /* Pretendard/bold-25 */
           font-family: Pretendard;
-          font-size: 25px;
+          font-size: $d1;
           font-style: normal;
           font-weight: 700;
           line-height: 120%; /* 30px */
         }
+        & a:hover {
+          color: $mc;
+        }
 
         // depth 2
-
+        // 비활성화
         .depth2-lst {
-          a {
-            display: none;
-            padding: 20px;
-            color: #333333;
-            /* Pretendard/regular-20 */
-            font-family: Pretendard;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 120%; /* 24px */
-          }
+          overflow: hidden;
+          max-height: 0px;
+          padding-top: 0;
+          transition: all 0.5s;
+          opacity: 0;
+        }
+      }
+
+      // 활성화
+      .depth1-lst .active .depth2-lst {
+        max-height: 300px;
+        opacity: 1;
+        a {
+          display: block;
+          padding: 12px 0;
+          color: $txtDefult;
+          /* Pretendard/regular-20 */
+          font-family: Pretendard;
+          font-size: $d2;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 120%; /* 24px */
         }
         a:hover {
-          color: #7d2426;
+          display: block;
+          padding: 12px 0;
+          color: $mc;
+          /* Pretendard/regular-20 */
+          font-family: Pretendard;
+          font-size: $d2;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 120%; /* 24px */
         }
       }
     }
@@ -90,7 +115,7 @@ body {
         margin: 10px 0px;
         padding: 7px 0;
         border-radius: 20px;
-        background: #7d2426;
+        background: $mc;
 
         a {
           color: $w;
@@ -138,3 +163,75 @@ body {
 }
 
 // footer
+
+#footer {
+  width: 1400px;
+  height: 400px;
+  background: $w;
+  padding-left: 47px;
+  margin-top: 194px;
+  margin-left: 400px;
+  & .footer-brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    & .footer-brand-img {
+      margin-right: 20px;
+    }
+  }
+  & .footer-spon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    & p {
+      margin-right: 20px;
+      color: $txtDefult;
+      font-family: Pretendard;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    & .footer-spon-img {
+      margin-right: 20px;
+    }
+  }
+  & .footer-line {
+    width: 1401px;
+    height: 1px;
+    background: $line-foot;
+  }
+  & .footer-txt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    & .footer-add {
+      color: $txtFooter;
+      font-family: Pretendard;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%;
+    }
+    & .footer-add2 {
+      text-align: right;
+      color: $txtFooter;
+      font-family: Pretendard;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%;
+    }
+  }
+  & .footer-copy {
+    padding-bottom: 36px;
+    & p {
+      color: $txtFooter;
+      font-family: Pretendard;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%;
+    }
+  }
+}

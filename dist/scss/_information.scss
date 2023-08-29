@@ -1,0 +1,292 @@
+#info-main {
+  padding: 5% 0;
+  margin-left: 400px;
+  .info-top-wrap {
+    width: 1400px;
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    // 공연정보 이미지
+    .info-top-img {
+      width: 430px;
+      height: 620px;
+      margin-right: 10%;
+    }
+    .info-top-text {
+      // 공연정보 아이콘
+      .info-top-i {
+        margin-bottom: 20px;
+        & p {
+          text-align: center;
+          width: 60px;
+          padding: 5px 12px;
+          color: $mc;
+          border: 1px solid $mc;
+          border-radius: 40px;
+          font-family: Pretendard;
+          font-size: $ps;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+      // 공연정보 타이틀
+      .info-top-tit {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        & h3 {
+          color: $b;
+          margin-right: 35px;
+          font-family: Pretendard;
+          font-size: $h3;
+          font-style: normal;
+          font-weight: 700;
+        }
+        & h4 {
+          color: $b;
+          font-family: Pretendard;
+          font-size: $d1;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+      .info-top-p {
+        p {
+          color: $b;
+          font-family: Pretendard;
+          font-size: $ps;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 180%;
+        }
+      }
+      .info-top-lst {
+        padding-top: 15px;
+        .info-top-line {
+          margin: 15px 0;
+          width: 700px;
+          height: 340px;
+          height: 1px;
+          background-color: $mc;
+        }
+        ul {
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h5 {
+              padding: 8px 0px;
+              padding-left: 20px;
+              color: $mc;
+              font-family: Pretendard;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+            }
+            p {
+              padding-right: 60px;
+              color: $b;
+              font-family: Pretendard;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .info-goto {
+    padding-top: 80px;
+    position: relative;
+    .info-goto-btn {
+      position: absolute;
+      top: 40px;
+      left: 41%;
+      background: $w;
+      a {
+        border: 2px solid $mc;
+        border-radius: 40px;
+        padding: 20px 40px;
+        color: $mc;
+        font-family: Pretendard;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+    .info-goto-btn-2 {
+      position: absolute;
+      top: 40px;
+      left: 58%;
+      a {
+        border: 2px solid $mc;
+        border-radius: 40px;
+        padding: 20px 40px;
+        color: $mc;
+        font-family: Pretendard;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+    .info-goto-btn a:hover {
+      background: $mc;
+      color: $w;
+    }
+    .info-goto-btn-2 a:hover {
+      background: $mc;
+      color: $w;
+    }
+  }
+  // 탭 영역
+  .info-tabs-wrap {
+    position: relative;
+    display: flex;
+    width: 1300px;
+    padding: 50px 90px;
+    // 비활성화 탭
+    .info-tabs-item {
+      width: 25%;
+      .info-tabs-tit {
+        width: 280px;
+        height: 80px;
+        background: $w;
+        border: 2px solid $w;
+        // border: 2px solid $mc;
+        h3 {
+          box-sizing: border-box;
+          color: $mc;
+          text-align: center;
+          padding-top: 20px;
+          font-family: Pretendard;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+    }
+    // 활성화 탭
+    .info-tabs-item.on .info-tabs-tit {
+      width: 280px;
+      height: 80px;
+      background: $mc;
+      border: 2px solid $mc;
+      border-radius: 20px 20px 0px 0px;
+      h3 {
+        box-sizing: border-box;
+        color: $w;
+        text-align: center;
+        padding-top: 20px;
+        font-family: Pretendard;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+    // 공연 디테일 내용
+    .info-tabs-cont {
+      position: absolute;
+      top: 130px;
+      left: 90px;
+      width: 1287px;
+      .cont-synopsis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $b;
+      }
+      .cont-synopsis-text {
+        background: $b;
+        height: 1000px;
+        padding-top: 50px;
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          li {
+            width: 380px;
+            height: 700px;
+            padding: 130px 40px;
+            h4 {
+              margin-bottom: 50px;
+              color: $w;
+              font-family: Shippori Mincho;
+              font-size: 48px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 200%;
+            }
+            p {
+              color: $w;
+              font-family: Pretendard;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 200%;
+            }
+          }
+        }
+      }
+    }
+    .info-tabs-cont {
+      display: none;
+    }
+    .on .info-tabs-cont {
+      display: block;
+    }
+    // 갤러리 영역
+    .tabs-cont-gall {
+      width: 1300px;
+      padding-top: 50px;
+      position: relative;
+      .gall-slide-wrap {
+        .swiper {
+          width: 100%;
+          height: 500px;
+        }
+        .swiper-slide {
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .swiper-slide img {
+          display: block;
+          width: 900px;
+          object-fit: cover;
+        }
+        .swiper .swiper-pagination {
+          position: absolute;
+          color: $mc;
+          bottom: 0px !important;
+        }
+        .swiper .swiper-pagination-bullet {
+          background-color: $mc;
+          margin: 0 5px !important;
+        }
+        .swiper .swiper-button-next {
+          color: $mc;
+          margin: 0 10px !important;
+        }
+        .swiper .swiper-button-prev {
+          color: $mc;
+          margin: 0 10px !important;
+        }
+      }
+    }
+    .tabs-video {
+      padding: 50px;
+      width: 100%;
+    }
+  }
+}
+.tabs-area {
+  display: block;
+  background: $w;
+  width: 100%;
+  height: 2200px;
+}

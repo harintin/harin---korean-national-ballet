@@ -1,0 +1,432 @@
+.introduce-content {
+  width: 100%;
+  height: 100%;
+
+  // 인사말
+  .introduce-hello {
+    overflow: hidden;
+    width: 100%;
+    height: 1024px;
+    background: $b;
+    color: $w;
+    .introduce-tit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 90px;
+    }
+    .big-tit {
+      margin-top: 60px;
+      margin-bottom: 10px;
+      h3 {
+        font-family: Pretendard;
+        font-size: $h3;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+    }
+    .small-line {
+      margin: 0 10px;
+      width: 50px;
+      height: 1px;
+      background: $w;
+    }
+    .small-tit {
+      display: flex;
+      align-items: center;
+      p {
+        font-family: Pretendard;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      p:last-child {
+        font-family: Pretendard;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        color: $mc;
+      }
+    }
+    .introduce-txt {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      .introduce-txt-lst {
+        margin-top: 100px;
+        & p {
+          margin-bottom: 77px;
+          font-family: Pretendard;
+          font-size: $ps;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+        h4 {
+          margin-bottom: 10px;
+          color: $mc;
+          font-family: Pretendard;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%;
+        }
+        .sign {
+          margin-top: 10px;
+          display: flex;
+          .sign-text {
+            margin-right: 40px;
+            h5 {
+              margin-bottom: 10px;
+              font-family: Pretendard;
+              font-size: 25px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 120%;
+            }
+          }
+          .sign-img {
+            display: block;
+            width: 168px;
+            height: 70px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  // 발레단소개
+  .introduce-ballet {
+    overflow: hidden;
+    width: 100%;
+    height: 1024px;
+    background-image: url(../../images/contents/ballet-txt-bg.png);
+    color: $w;
+    margin-bottom: 140px;
+    .introduce-tit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 140px;
+    }
+    .big-tit {
+      margin-top: 110px;
+      margin-bottom: 10px;
+      h3 {
+        font-family: Pretendard;
+        font-size: $h3;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+    }
+    .small-line {
+      margin: 0 10px;
+      width: 50px;
+      height: 1px;
+      background: $w;
+    }
+    .small-tit {
+      display: flex;
+      align-items: center;
+      p {
+        font-family: Pretendard;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      p:last-child {
+        font-family: Pretendard;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        color: $mc;
+      }
+    }
+  }
+  .ballet-txt {
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    & p {
+      margin-left: 300px;
+      font-family: Pretendard;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 180%;
+    }
+  }
+  .find-place {
+    background: $w;
+    height: 2500px;
+    .introduce-tit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 109px;
+    }
+    .big-tit {
+      margin-top: 110px;
+      margin-bottom: 10px;
+      h3 {
+        font-family: Pretendard;
+        font-size: $h3;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+    }
+    .small-line {
+      margin: 0 10px;
+      width: 50px;
+      height: 1px;
+      background: $b;
+    }
+    .small-tit {
+      display: flex;
+      align-items: center;
+      p {
+        font-family: Pretendard;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      p:last-child {
+        font-family: Pretendard;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        color: $mc;
+      }
+    }
+    .map-place {
+      width: 1280px;
+      height: 650px;
+      background: $b;
+      margin: 0 110px;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+    .map-txt-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 0 110px;
+      margin-bottom: 70px;
+      .map-tit {
+        display: flex;
+        align-items: center;
+        i {
+          width: 30px;
+          font-size: 20px;
+        }
+        h4 {
+          padding-left: 5px;
+          text-align: left;
+          font-family: Pretendard;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 0;
+        }
+      }
+      p {
+        margin-top: 12px;
+        margin-bottom: 37px;
+        font-family: Pretendard;
+        font-size: $d2;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      button a {
+        width: 125px;
+        height: 60px;
+        padding: 20px 40px;
+        border: 2px solid $mc;
+        border-radius: 60px;
+        color: $mc;
+        text-align: center;
+        font-family: Pretendard;
+        font-size: $p;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+    // 교통수단 카테고리 탭
+    .find-category {
+      position: relative;
+      padding: 0 110px;
+      margin-bottom: 35px;
+      background: $w;
+      .category-tit {
+        width: 100%;
+        display: flex;
+        padding-bottom: 20px;
+        .find-category-tab {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 130px;
+          text-align: center;
+          h4 {
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            color: $txtDefult;
+          }
+          i {
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            margin-right: 5px;
+          }
+        }
+        .find-category-tab.on {
+          width: 130px;
+          text-align: center;
+          h4 {
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            color: $mc;
+          }
+          i {
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            margin-right: 5px;
+            color: $mc;
+          }
+        }
+      }
+      .cut-line {
+        width: 100%;
+        height: 1px;
+        background: $line-normal;
+      }
+
+      // 교통수단 상세 내용
+
+      .public-way {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 110px;
+        ul li {
+          display: flex;
+          margin-bottom: 20px;
+          .center-line {
+            width: 16px;
+            height: 2px;
+            background: $mc;
+            margin-top: 10px;
+            margin-right: 20px;
+          }
+          .center-line-w {
+            width: 16px;
+            height: 2px;
+            background: $w;
+            margin-top: 10px;
+            margin-right: 20px;
+          }
+        }
+        .public-text {
+          text-align: left;
+          h5 {
+            margin-bottom: 10px;
+            color: $mc;
+            font-family: Pretendard;
+            font-size: $d2;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+          }
+          h6 {
+            margin-bottom: 10px;
+            font-family: Pretendard;
+            font-size: $ps;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+          }
+          p {
+            margin-bottom: 20px;
+            color: $b;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+      }
+      .on .public-way {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 110px;
+        ul li {
+          display: flex;
+          margin-bottom: 20px;
+          .center-line {
+            width: 16px;
+            height: 2px;
+            background: $mc;
+            margin-top: 10px;
+            margin-right: 20px;
+          }
+          .center-line-w {
+            width: 16px;
+            height: 2px;
+            background: $w;
+            margin-top: 10px;
+            margin-right: 20px;
+          }
+        }
+        .public-text {
+          text-align: left;
+          h5 {
+            margin-bottom: 10px;
+            color: $mc;
+            font-family: Pretendard;
+            font-size: $d2;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+          }
+          h6 {
+            margin-bottom: 10px;
+            font-family: Pretendard;
+            font-size: $ps;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+          }
+          p {
+            margin-bottom: 20px;
+            color: $b;
+            font-family: Pretendard;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}

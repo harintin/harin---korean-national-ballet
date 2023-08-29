@@ -78,7 +78,7 @@
       <header id="header">
         <div class="header-wrap">
           <div id="logo">
-            <a href="#">
+            <a href="./index.html">
               <img src="./images/comm/logo.png" alt="로고이미지" />
             </a>
           </div>
@@ -170,231 +170,130 @@
         </div>
       </header>
 
-      <!-- main content -->
-      <div class="main-content container">
-        <!-- main video -->
-        <div class="video-wrap">
-          <div class="video-logo">
-            <img src="./images/comm/logo-white.png" alt="" />
+      <!-- main -->
+      <main id="perform-main" class="perform-main">
+        <section>
+          <div class="perform-top">
+            <h3 class="perform-tit">공연정보</h3>
+            <div class="perform-search">
+              <input
+                type="text"
+                name="검색창"
+                id="p-search"
+                placeholder="검색"
+              />
+              <span>
+                <select name="year" id="p-date" class="p-form" title="공연연도">
+                  <option value="00" selected>2022 - 2023</option>
+                  <option value="01">2020 - 2021</option>
+                  <option value="02">2018 - 2019</option>
+                </select>
+              </span>
+            </div>
           </div>
-          <video muted autoplay loop>
-            <source src="./video/koreannationalballet.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <!-- main -->
-        <main id="main">
-          <!-- 뉴스레터 -->
-          <section id="news-letter">
-            <div class="newsletter-wrap">
-              <h3>뉴스레터 구독신청</h3>
-              <p>국립발레단의 다양한 소식을 만나보세요!</p>
-              <div class="newsletter-content">
-                <input
-                  type="text"
-                  name="name"
-                  id="news-name"
-                  placeholder="이름"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="news-email"
-                  placeholder="이메일 주소"
-                />
-                <input
-                  type="number"
-                  name="email"
-                  id="news-number"
-                  placeholder="전화번호"
-                />
-                <button>
-                  <p>국립발레단 뉴스레터 신청</p>
-                </button>
-              </div>
-            </div>
-          </section>
-
-          <!-- 공연정보 -->
-          <section id="info">
-            <div class="info-wrap">
-              <h3>공연정보</h3>
-              <div class="info-content">
-                <!-- 공연정보 상세내용 -->
-                <div class="info-perform">
-                  <div class="info-perform-icon">
-                    <p>공연</p>
-                  </div>
-                  <div class="h-wrap">
-                    <h4>지젤</h4>
-                    <h5>Giselle</h5>
-                  </div>
-                  <div class="date">
-                    <p>2023.05.23 - 05.27</p>
-                  </div>
-                  <div class="p-wrap">
-                    <div class="date-2">
-                      <p>평일 19:30 / 토 15:00</p>
-                    </div>
-                    <div class="place">
-                      <p>국립극장 해오름</p>
-                    </div>
-                  </div>
-                  <div class="time">
-                    <p>120분 (1막 50분, 인터미션 20분, 2막 50분)</p>
-                  </div>
-                </div>
-                <!-- 내부 슬라이드 -->
-                <div class="info-perform-slide">
-                  <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-1.png"
-                            alt="지젤"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-2.png"
-                            alt="무브먼트"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-
-                  <!-- Swiper JS -->
-                  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-                  <!-- Initialize Swiper -->
-                  <script>
-                    var swiper = new Swiper(".mySwiper", {
-                      slidesPerView: 3,
-                      spaceBetween: 10,
-                      pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                      },
-                    });
-                  </script>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- 발레단소개 & 공지사항 -->
-          <section id="bbs">
-            <div class="bbs-introduce">
-              <div class="bbs-introduce-tit">
-                <h3>발레단소개</h3>
-                <a href="#">
-                  <p>자세히보기</p>
-                </a>
-              </div>
-              <div class="bbs-introduce-txt">
-                <a href="#">
-                  <img
-                    src="./images/main/발레단소개-썸네일.png"
-                    alt="발레단소개썸네일"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="bbs-notice">
-              <div class="bbs-notice-tit">
-                <h3>공지사항</h3>
-                <a href="#">
-                  <p>자세히보기</p>
-                </a>
-              </div>
-              <div class="bbs-notice-txt">
-                <div class="bold-line"></div>
-                <div class="notice 01">
-                  <div class="notice-icon">공지사항</div>
-                  <div class="notice-txt 01">
+          <div class="perform-wrap">
+            <div class="perform-lst">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/contents/공연정보/돈키호테.png"
+                      alt="돈키호테"
+                    />
+                  </a>
+                  <div class="perform-lst-txt">
                     <a href="#">
-                      < 트리플 빌 > & < 해설이 있는 전막발레 해적 > 캐스팅 변경
-                      안내
+                      <h4>돈키호테</h4>
+                      <p>2023.04.12 - 04.16</p>
+                      <p>예술의전당 오페라극장</p>
                     </a>
                   </div>
-                  <div class="notice-date">2023.08.03</div>
-                </div>
-                <div class="normal-line"></div>
-                <div class="notice 02">
-                  <div class="notice-icon">공지사항</div>
-                  <div class="notice-txt 02">
-                    <a href="#"> 2023년도 2분기 친인척 신규채용 규모 공개 </a>
+                </li>
+                <li>
+                  <a href="./information.html">
+                    <img src="./images/contents/공연정보/지젤.png" alt="지젤" />
+                  </a>
+                  <div class="perform-lst-txt">
+                    <a href="./information.html">
+                      <h4>지젤</h4>
+                      <p>2023.05.23 - 05.27</p>
+                      <p>국립극장 해오름</p>
+                    </a>
                   </div>
-                  <div class="notice-date">2023.08.02</div>
-                </div>
-                <div class="normal-line"></div>
-                <div class="notice 03">
-                  <div class="notice-icon">공지사항</div>
-                  <div class="notice-txt 03">
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/contents/공연정보/무브먼트.png"
+                      alt="무브먼트"
+                    />
+                  </a>
+                  <div class="perform-lst-txt">
                     <a href="#">
-                      국립발레단 지역공연 부산, 천안 < 돈키호테 > 캐스팅 안내</a
-                    >
+                      <h4>KNB Movement Series 8</h4>
+                      <p>2023.07.01 - 07.02</p>
+                      <p>예술의전당 CJ 토월극장</p>
+                    </a>
                   </div>
-                  <div class="notice-date">2023.08.02</div>
-                </div>
-                <div class="normal-line"></div>
-                <div class="notice 04">
-                  <div class="notice-icon">공지사항</div>
-                  <div class="notice-txt 04">
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/contents/공연정보/돈키호테.png"
+                      alt="돈키호테"
+                    />
+                  </a>
+                  <div class="perform-lst-txt">
                     <a href="#">
-                      국립발레단 < KNB Movement Series 8 > 고객만족도 조사
-                      안내</a
-                    >
+                      <h4>해설이 있는 전막발레 해적</h4>
+                      <p>2023.08.30 - 09.03</p>
+                      <p>예술의전당 CJ 토월극장</p>
+                    </a>
                   </div>
-                  <div class="notice-date">2023.07.01</div>
-                </div>
-                <div class="bold-line"></div>
-              </div>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/contents/공연정보/백조의 호수.png"
+                      alt="돈키호테"
+                    />
+                  </a>
+                  <div class="perform-lst-txt">
+                    <a href="#">
+                      <h4>백조의 호수</h4>
+                      <p>2022.10.12 - 10.16</p>
+                      <p>예술의전당 오페라극장</p>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/contents/공연정보/쥬얼스.png"
+                      alt="지젤"
+                    />
+                  </a>
+                  <div class="perform-lst-txt">
+                    <a href="#">
+                      <h4>주얼스</h4>
+                      <p>2022.02.25 - 02.27</p>
+                      <p>국립극장 해오름</p>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="perform-lst-txt"></div>
+                </li>
+                <li>
+                  <div class="perform-lst-txt"></div>
+                </li>
+              </ul>
             </div>
-          </section>
-          <section id="youtube">
-            <div class="youtube-video">
-              <iframe
-                width="1200"
-                height="650"
-                src="https://www.youtube.com/embed/Y6YBTqaqN94?controls=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </section>
-        </main>
-      </div>
+          </div>
+        </section>
+      </main>
     </div>
     <!-- footer -->
     <footer id="footer">
