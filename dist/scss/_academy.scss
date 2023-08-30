@@ -400,6 +400,150 @@
   }
 }
 
+// 아카데미 공지사항
+
+.academy-notice-wrap {
+  margin-top: 194px;
+  padding-left: 110px;
+  .academy-notice-tit {
+    margin-bottom: 40px;
+    h3 {
+      color: $b;
+      font-family: Pretendard;
+      font-size: $h3;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  .academy-notice-lst {
+    .academy-notice-ul {
+      width: 1280px;
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+        border-bottom: 1px solid $line-normal;
+        .academy-notice-icon {
+          width: 70px;
+          height: 26px;
+          color: $w;
+          padding: 3px;
+          border-radius: 5px;
+          text-align: center;
+          background: $txtDefult;
+          font-family: Pretendard;
+          font-size: $pss;
+          font-style: normal;
+          font-weight: 400;
+        }
+        .academy-notice-txt {
+          width: 70%;
+          a {
+            font-family: Pretendard;
+            font-size: $d2;
+            font-style: normal;
+            font-weight: 500;
+          }
+        }
+        p {
+          color: $txtDefult;
+          text-align: right;
+          font-family: Pretendard;
+          font-size: $pss;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  // 아카데미 공지사항 페이지네이션
+  .academy-notice-page {
+    margin-top: 20px;
+    margin-bottom: 194px;
+    .notice-page-ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      .page-on {
+        a {
+          color: $b;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+      li {
+        margin: 0 10px;
+        a {
+          color: $txtPage;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+      .page-next {
+        a {
+          color: $b;
+          font-family: Pretendard;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+// 아카데미 자주 묻는 질문
+.academy-qna-wrap {
+  padding-left: 110px;
+  margin-bottom: 194px;
+  .academy-qna-tit {
+    margin-bottom: 40px;
+    h3 {
+      color: $b;
+      font-family: Pretendard;
+      font-size: $h3;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  .academy-qna-ul {
+    width: 1280px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 35px 10px;
+      border-bottom: 1px solid $line-normal;
+      .academy-qna-icon {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        background: url(../../images/contents/qna-icon.png) no-repeat 0 0;
+      }
+      .academy-qna-txt {
+        width: 70%;
+        a {
+          font-family: Pretendard;
+          font-size: $d2;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+      .academy-qna-next-icon {
+        width: 30px;
+        height: 30px;
+        background: url(../../images/contents/next-icon.png) no-repeat 0 0;
+      }
+    }
+  }
+}
+
 // 아카데미 타이틀 스타일
 .academy-tit {
   display: flex;
@@ -442,4 +586,12 @@
       color: $mc;
     }
   }
+}
+
+// 구분선
+
+.bold-line {
+  width: 1280px;
+  height: 2px;
+  background: $line-bold;
 }
