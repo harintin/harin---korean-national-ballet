@@ -1,6 +1,6 @@
 @charset "UFT-8";
 @import "variables", "mixin", "fonts", "reset", "main", "contents", "introduce",
-  "perform", "information", "academy";
+  "perform", "information", "academy", "notice";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -170,7 +170,7 @@ body {
   background: $w;
   padding-left: 47px;
   margin-top: 194px;
-
+  margin-left: 400px;
   & .footer-brand {
     display: flex;
     align-items: center;

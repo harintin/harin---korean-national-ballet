@@ -1,0 +1,72 @@
+#notice-main {
+  margin-left: 400px;
+  padding-top: 90px;
+  padding-left: 110px;
+  .notice-wraper {
+    margin-bottom: 194px;
+    h2 {
+      color: $b;
+      font-family: Pretendard;
+      font-size: $h3;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .bold-line {
+      width: 1280px;
+      height: 2px;
+      background: $line-bold;
+    }
+    .or-notice-ul {
+      width: 1280px;
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+        border-bottom: 1px solid $line-normal;
+        .or-notice-icon {
+          width: 70px;
+          height: 26px;
+          color: $w;
+          padding: 3px;
+          border-radius: 5px;
+          text-align: center;
+          background: $txtDefult;
+          font-family: Pretendard;
+          font-size: $pss;
+          font-style: normal;
+          font-weight: 400;
+        }
+        .or-notice-txt {
+          width: 70%;
+          a {
+            font-family: Pretendard;
+            font-size: $d2;
+            font-style: normal;
+            font-weight: 500;
+          }
+        }
+        p {
+          color: $txtDefult;
+          text-align: right;
+          font-family: Pretendard;
+          font-size: $pss;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+    }
+    .notice-more {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      padding-right: 110px;
+      button {
+        width: 50px;
+        height: 50px;
+        background: url(../../images/contents/more-icon.png) no-repeat 0 0;
+      }
+    }
+  }
+}
