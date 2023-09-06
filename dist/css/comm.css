@@ -2133,6 +2133,200 @@ legend {
   background: url(../../images/contents/more-icon.png) no-repeat 0 0;
 }
 
+#faq-main {
+  padding-top: 90px;
+  padding-left: 400px;
+  margin: 0;
+}
+#faq-main section {
+  width: 100%;
+}
+#faq-main section .faq-wrap {
+  margin-left: 180px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#faq-main section .faq-wrap h2 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: Pretendard;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
+}
+#faq-main section .faq-wrap .faq-line {
+  margin: 40px 0;
+  width: 70%;
+  height: 2px;
+  background: #505050;
+}
+#faq-main section .faq-wrap .faq-lst {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#faq-main section .faq-wrap .faq-lst ul {
+  width: 60%;
+}
+#faq-main section .faq-wrap .faq-lst ul li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+}
+#faq-main section .faq-wrap .faq-lst ul li label {
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+#faq-main section .faq-wrap .faq-lst ul li input#faq-name {
+  width: 83%;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  padding: 12px;
+}
+#faq-main section .faq-wrap .faq-lst ul li input#faq-email {
+  width: 37%;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  padding: 12px;
+}
+#faq-main section .faq-wrap .faq-lst ul li input#faq-email2 {
+  width: 36%;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  padding: 12px;
+}
+#faq-main section .faq-wrap .faq-lst ul li span {
+  position: absolute;
+  top: 12px;
+  left: 365px;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+#faq-main section .faq-wrap .faq-lst ul li input#faq-title {
+  width: 83%;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  padding: 12px;
+}
+#faq-main section .faq-wrap .faq-lst ul li textarea#faq-text {
+  width: 83%;
+  height: 230px;
+  border-radius: 7px;
+  border: 1px solid #bcbcbc;
+  padding: 12px;
+}
+#faq-main section .faq-wrap .faq-lst ul li input:focus {
+  outline: none;
+  background: #eee;
+}
+#faq-main section .faq-wrap .faq-lst ul li textarea:focus {
+  outline: none;
+  background: #eee;
+}
+#faq-main section .faq-wrap .faq-lst ul p {
+  padding-top: 15px;
+  width: 100%;
+  text-align: right;
+  color: #7d2426;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+#faq-main section .faq-wrap .faq-check {
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 70%;
+  background: #fff;
+  border: 1px solid #7d2426;
+}
+#faq-main section .faq-wrap .faq-check .faq-check-text {
+  overflow-y: scroll;
+  padding: 30px;
+  height: 230px;
+}
+#faq-main section .faq-wrap .faq-check .faq-check-text span {
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+#faq-main section .faq-wrap .faq-check .faq-check-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: #7d2426;
+}
+#faq-main section .faq-wrap .faq-check .faq-check-box input#check-box {
+  display: none;
+}
+#faq-main section .faq-wrap .faq-check .faq-check-box label {
+  margin-right: 10px;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+#faq-main section .faq-wrap .faq-check .faq-check-box input#check-box + label {
+  margin-right: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+#faq-main section .faq-wrap .faq-check .faq-check-box input#check-box:checked + label {
+  width: 9px;
+  height: 9px;
+  background: #000;
+  border: 5px solid #fff;
+}
+#faq-main section .faq-wrap .faq-button {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#faq-main section .faq-wrap .faq-button button {
+  width: 90px;
+  height: 40px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+#faq-main section .faq-wrap .faq-button button a {
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+#faq-main section .faq-wrap .faq-button .save {
+  background: #7d2426;
+}
+#faq-main section .faq-wrap .faq-button .cancel {
+  background: #333;
+}
+
 .container {
   width: 100%;
   padding: 0 0 0 400px;
@@ -2182,6 +2376,21 @@ body {
   line-height: 120%; /* 30px */
 }
 #header .header-wrap nav .depth1-lst a:hover {
+  color: #7d2426;
+}
+#header .header-wrap nav .depth1-lst h2 {
+  display: block;
+  padding: 20px 0;
+  color: #101010;
+  /* Pretendard/bold-25 */
+  font-family: Pretendard;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 30px */
+  cursor: pointer;
+}
+#header .header-wrap nav .depth1-lst h2:hover {
   color: #7d2426;
 }
 #header .header-wrap nav .depth1-lst .depth2-lst {

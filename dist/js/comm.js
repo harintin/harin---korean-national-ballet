@@ -42,7 +42,7 @@ $(function () {
   // });
 
   // 조건문
-  $("#gnb .depth1-lst > li > a").on("click", function () {
+  $("#gnb .depth1-lst > li > h2").on("click", function () {
     if ($(this).parent().hasClass("active")) {
       // 만약 .active를 가지고 있다면
       $("#gnb .depth1-lst > li").removeClass("active");

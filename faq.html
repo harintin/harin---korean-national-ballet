@@ -78,7 +78,7 @@
       <header id="header">
         <div class="header-wrap">
           <div id="logo">
-            <a href="#">
+            <a href="./index.html">
               <img src="./images/comm/logo.png" alt="로고이미지" />
             </a>
           </div>
@@ -176,231 +176,82 @@
         </div>
       </header>
 
-      <!-- main content -->
-      <div class="main-content container">
-        <!-- main video -->
-        <div class="video-wrap">
-          <div class="video-logo">
-            <img src="./images/comm/logo-white.png" alt="" />
+      <!-- main -->
+      <main id="faq-main">
+        <section>
+          <div class="faq-wrap">
+            <h2>1:1 문의</h2>
+            <div class="faq-line"></div>
+            <div class="faq-lst">
+              <ul>
+                <li>
+                  <label for="faq-name">성명</label>
+                  <input type="text" name="faq-name" id="faq-name" />
+                </li>
+                <li>
+                  <label for="faq-email">이메일</label>
+                  <input type="email" name="faq-email" id="faq-email" />
+                  <span> @ </span>
+                  <input type="email" name="faq-email" id="faq-email2" />
+                </li>
+                <p>
+                  ※ 이메일 주소가 정확하지 않을 시 답변이 발송되지 않습니다.
+                  이메일이 맞는지 다시 한번 확인해주십시오.
+                </p>
+                <li>
+                  <label for="faq-title">문의명</label>
+                  <input type="text" name="faq-title" id="faq-title" />
+                </li>
+                <li>
+                  <label for="faq-text">문의내용</label>
+                  <textarea
+                    name="faq-text"
+                    id="faq-text"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </li>
+              </ul>
+            </div>
+            <div class="faq-check">
+              <div class="faq-check-text">
+                <span
+                  >(재)국립발레단은 1:1문의를 위한 개인정보 수집·이용을 위하여
+                  다음과 같이 귀하의 동의를 받고자 합니다. <br /><br />
+                  1. 개인정보의 수집 <br />
+                  1) 필수항목 : 성명, 이메일
+                  <br /><br />
+                  2. 개인정보의 처리목적 <br />
+                  1) 고객 문의에 대한 답변
+                  <br />
+                  2) 이메일 발송 <br /><br />
+                  3. 개인정보의 처리 및 보유기간 - 1:1문의 접수 시점으로부터 3년
+                  <br />
+                  다만, 다음의 사유에 해당하는 경우에는 해당 사유 종료시까지
+                  <br />
+                  1) 관계 법령 위반에 따른 수사ㆍ조사 등이 진행 중인 경우에는
+                  해당 수사ㆍ조사 종료 시까지 (재)국립발레단은 위와 같이 고객의
+                  정보를 수집 이용 및 처리하고자하며 이메일발송 이외의 목적으로
+                  고객의 정보를 이용하지 않습니다.</span
+                >
+              </div>
+              <div class="faq-check-box">
+                <label for="check-box">개인정보수집 및 이메일수신 동의</label>
+                <input type="checkbox" name="check-box" id="check-box" />
+                <label for="check-box"></label>
+              </div>
+            </div>
+            <div class="faq-button">
+              <button class="save">
+                <a href="#">확인</a>
+              </button>
+              <button class="cancel">
+                <a href="#">취소</a>
+              </button>
+            </div>
           </div>
-          <video muted autoplay loop>
-            <source src="./video/koreannationalballet.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <!-- main -->
-        <main id="main">
-          <!-- 뉴스레터 -->
-          <section id="news-letter">
-            <div class="newsletter-wrap">
-              <h3>뉴스레터 구독신청</h3>
-              <p>국립발레단의 다양한 소식을 만나보세요!</p>
-              <div class="newsletter-content">
-                <input
-                  type="text"
-                  name="name"
-                  id="news-name"
-                  placeholder="이름"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="news-email"
-                  placeholder="이메일 주소"
-                />
-                <input
-                  type="number"
-                  name="email"
-                  id="news-number"
-                  placeholder="전화번호"
-                />
-                <button>
-                  <p>국립발레단 뉴스레터 신청</p>
-                </button>
-              </div>
-            </div>
-          </section>
-
-          <!-- 공연정보 -->
-          <section id="info">
-            <div class="info-wrap">
-              <h3>공연정보</h3>
-              <div class="info-content">
-                <!-- 공연정보 상세내용 -->
-                <div class="info-perform">
-                  <div class="info-perform-icon">
-                    <p>공연</p>
-                  </div>
-                  <div class="h-wrap">
-                    <h4>지젤</h4>
-                    <h5>Giselle</h5>
-                  </div>
-                  <div class="date">
-                    <p>2023.05.23 - 05.27</p>
-                  </div>
-                  <div class="p-wrap">
-                    <div class="date-2">
-                      <p>평일 19:30 / 토 15:00</p>
-                    </div>
-                    <div class="place">
-                      <p>국립극장 해오름</p>
-                    </div>
-                  </div>
-                  <div class="time">
-                    <p>120분 (1막 50분, 인터미션 20분, 2막 50분)</p>
-                  </div>
-                </div>
-                <!-- 내부 슬라이드 -->
-                <div class="info-perform-slide">
-                  <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-1.png"
-                            alt="지젤"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-2.png"
-                            alt="무브먼트"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-
-                  <!-- Swiper JS -->
-                  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-                  <!-- Initialize Swiper -->
-                  <script>
-                    var swiper = new Swiper(".mySwiper", {
-                      slidesPerView: 3,
-                      spaceBetween: 10,
-                      pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                      },
-                    });
-                  </script>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- 발레단소개 & 공지사항 -->
-          <section id="bbs">
-            <div class="bbs-introduce">
-              <div class="bbs-introduce-tit">
-                <h3>발레단소개</h3>
-                <a href="#">
-                  <p>자세히보기</p>
-                </a>
-              </div>
-              <div class="bbs-introduce-txt">
-                <a href="#">
-                  <img
-                    src="./images/main/발레단소개-썸네일.png"
-                    alt="발레단소개썸네일"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="bbs-notice">
-              <div class="bbs-notice-tit">
-                <h3>공지사항</h3>
-                <a href="#">
-                  <p>자세히보기</p>
-                </a>
-              </div>
-              <div class="bbs-notice-txt">
-                <div class="bold-line"></div>
-                <div class="notice 01">
-                  <div class="notice-icon">공지사항</div>
-                  <div class="notice-txt 01">
-                    <a href="#">
-                      < 트리플 빌 > & < 해설이 있는 전막발레 해적 > 캐스팅 변경
-                      안내
-                    </a>
-                  </div>
-                  <div class="notice-date">2023.08.03</div>
-                </div>
-                <div class="normal-line"></div>
-                <div class="notice 02">
-                  <div class="notice-icon">공지사항</div>
-                  <div class="notice-txt 02">
-                    <a href="#"> 2023년도 2분기 친인척 신규채용 규모 공개 </a>
-                  </div>
-                  <div class="notice-date">2023.08.02</div>
-                </div>
-                <div class="normal-line"></div>
-                <div class="notice 03">
-                  <div class="notice-icon">공지사항</div>
-                  <div class="notice-txt 03">
-                    <a href="#">
-                      국립발레단 지역공연 부산, 천안 < 돈키호테 > 캐스팅 안내</a
-                    >
-                  </div>
-                  <div class="notice-date">2023.08.02</div>
-                </div>
-                <div class="normal-line"></div>
-                <div class="notice 04">
-                  <div class="notice-icon">공지사항</div>
-                  <div class="notice-txt 04">
-                    <a href="#">
-                      국립발레단 < KNB Movement Series 8 > 고객만족도 조사
-                      안내</a
-                    >
-                  </div>
-                  <div class="notice-date">2023.07.01</div>
-                </div>
-                <div class="bold-line"></div>
-              </div>
-            </div>
-          </section>
-          <section id="youtube">
-            <div class="youtube-video">
-              <iframe
-                width="1200"
-                height="650"
-                src="https://www.youtube.com/embed/Y6YBTqaqN94?controls=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </section>
-        </main>
-      </div>
+        </section>
+      </main>
 
       <!-- footer -->
       <footer id="footer">
