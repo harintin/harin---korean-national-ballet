@@ -68,5 +68,3 @@ tabTit.on("click", function () {
   // 방금 클릭한 나(this)의 부모(parent())에게 .on 추가
   $(this).parent().addClass("on");
 });
-
-// 공지사항 more 탭
