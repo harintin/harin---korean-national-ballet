@@ -19,6 +19,7 @@
     }
     .or-notice-ul {
       width: 1280px;
+      transition: height 0.3s ease-in-out;
       li {
         display: flex;
         justify-content: space-between;

@@ -1,17 +1,38 @@
 // tabs
-const tabEl = $(".find-category-tab");
-const tabTit = tabEl.find(".category-tab-tit");
-// .tab-item 옆에 .on 클래스를 삭제
-tabEl.removeClass("on");
-// 클릭했을 때 on 클래스가 나오게
-tabEl.first().addClass("on");
-// .tab-item .tit 을 클릭했을 때
-tabTit.on("click", function () {
-  // .tab-item 에 붙어있는 on을 먼저 삭제
-  tabEl.removeClass("on");
-  // 방금 클릭한 나(this)의 부모(parent())에게 .on 추가
-  $(this).parent().addClass("on");
+// tabbed content
+// http://www.entheosweb.com/tutorials/css/tabs.asp
+$(".tab_content").hide();
+$(".tab_content:first").show();
+
+/* if in tab mode */
+$("ul.tabs li").click(function () {
+  $(".tab_content").hide();
+  var activeTab = $(this).attr("rel");
+  $("#" + activeTab).fadeIn();
+
+  $("ul.tabs li").removeClass("active");
+  $(this).addClass("active");
+
+  $(".tab_drawer_heading").removeClass("d_active");
+  $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
 });
+/* if in drawer mode */
+$(".tab_drawer_heading").click(function () {
+  $(".tab_content").hide();
+  var d_activeTab = $(this).attr("rel");
+  $("#" + d_activeTab).fadeIn();
+
+  $(".tab_drawer_heading").removeClass("d_active");
+  $(this).addClass("d_active");
+
+  $("ul.tabs li").removeClass("active");
+  $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+});
+
+/* Extra class "tab_last" 
+	   to add border to right side
+	   of last tab */
+$("ul.tabs li").last().addClass("tab_last");
 
 // nav
 $(function () {

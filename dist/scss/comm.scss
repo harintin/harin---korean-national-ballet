@@ -7,6 +7,12 @@
 
 // 공통
 
+.wrap {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 400px;
+}
+
 .container {
   width: 100%;
   padding: 0 0 0 400px;
@@ -180,6 +186,9 @@ body {
 // footer
 
 #footer {
+  position: absolute;
+  bottom: 0;
+  right: 70px;
   width: 1400px;
   height: 400px;
   background: $w;

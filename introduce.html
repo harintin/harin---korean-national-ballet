@@ -62,8 +62,8 @@
     />
     <script defer src="./dist/js/include.js"></script>
     <script defer src="./dist/js/video.js"></script>
-    <script defer src="./dist/js/intro.js"></script>
     <script defer src="./dist/js/comm.js"></script>
+    <script defer src="./dist/js/intro.js"></script>
     <script defer src="./dist/js/swiper.js"></script>
   </head>
   <body>
@@ -338,339 +338,197 @@
               </div>
             </div>
             <button>
-              <a href="http://kko.to/MS_GXDlrai">길찾기</a>
+              <a target="_blank" href="http://kko.to/MS_GXDlrai">길찾기</a>
             </button>
           </div>
-          <!-- 찾아오시는길 카테고리 -->
-          <div class="find-category">
-            <ul class="category-tit">
-              <li class="find-category-tab on">
+
+          <!-- 찾아오시는 길 탭 wrap -->
+          <div class="find-tabs">
+            <!-- 탭 타이틀 -->
+            <ul class="tabs">
+              <li class="active" rel="tab1">
                 <i class="fa-solid fa-car"></i>
-                <h4 class="category-tab-tit">승용차</h4>
-                <div class="public-way">
-                  <ul id="byCar">
-                    <li>
-                      <div class="center-line"></div>
-                      <div class="public-text">
-                        <h5>음악당 주차장</h5>
-                        <p>
-                          콘서트홀, IBK챔버홀, 리사이틀홀, 서울서예박물관,
-                          한가람디자인미술관, 음악분수, 광장
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="center-line"></div>
-                      <div class="public-text">
-                        <h5>오페라 주차장</h5>
-                        <p>
-                          오페라극장, CJ 토월극장, 자유소극장, 서울서예박물관,
-                          한가람미술관, 한가람디자인미술관
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="center-line"></div>
-                      <div class="public-text">
-                        <h5>주차 안내 바로가기</h5>
-                        <a href="#">
-                          <p>
-                            http://www.sac.or.kr/SacHome/useguide/locationGuide
-                          </p>
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+                <h4>승용차</h4>
               </li>
-              <li class="find-category-tab">
+              <li rel="tab2">
                 <i class="fa-solid fa-bus-simple"></i>
-                <h4 class="category-tab-tit">버스</h4>
-                <div class="public-way">
-                  <ul id="byBus">
-                    <li>
-                      <div class="center-line"></div>
-                      <div class="public-text">
-                        <h5>셔틀버스</h5>
-                        <h6>운행노선</h6>
-                        <p>
-                          남부터미널역 5번 출구 마을버스 정류장 승차 → 전당 앞
-                          스타벅스 하차 <br />
-                          ※ 마지막 버스는 음악당 주차장에서 하차합니다.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="center-line-w"></div>
-                      <div class="public-text">
-                        <h6>운행시간</h6>
-                        <p>
-                          평일 : 저녁 6시 30분 ~ 7시 30분 <br />
-                          토ㆍ일ㆍ공휴일 : 오후 1시 30분 ~ 2시 30분 / 저녁 6시
-                          30분 ~ 7시 30분 <br />
-                          ※ 월요일과 공연없는 날에는 운행하지 않습니다. <br />
-                          ※ 오전 공연에는 운행하지 않습니다.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="center-line-w"></div>
-                      <div class="public-text">
-                        <h6>배차횟수</h6>
-                        <p>배차간격은 교통상황에 따라 변동됩니다.</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="center-line-w"></div>
-                      <div class="public-text">
-                        <h6>승차장 안내</h6>
-                        <p>
-                          관련 법규에 의거, 예술의전당 셔틀버스는 사설운행에
-                          해당되어 도로변에 셔틀버스 이정표 설치나 버스 정류장에
-                          셔틀버스 안내문 부착이 불가함을 양지하여 주시기
-                          바라며, 예술의전당 셔틀버스 <br />는 항상 남부터미널
-                          5번 출구 마을버스 정류장에서 출발하오니 안심하시고
-                          이용하시고 바랍니다.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="center-line"></div>
-                      <div class="public-text">
-                        <h5>파랑버스</h5>
-                        <h6>405</h6>
-                        <p>
-                          염곡동 ― 양재역 ( 3호선,신분당선 1번 출구 ) ―
-                          예술의전당 ― 서초역 ( 2호선 3번 출구 ) ― 종로1가 ―
-                          서울역
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="center-line"></div>
-                      <div class="public-text">
-                        <h5>초록버스</h5>
-                        <h6>5413</h6>
-                        <p>
-                          시흥 ― 금천경찰서 ― 사당역 ( 2호선, 4호선 6번 출구 ) ―
-                          예술의전당 ― 고속터미널
-                        </p>
-                        <h6>서초 11</h6>
-                        <p>
-                          롯데빌리지 ― 서초역 ( 2호선 3번 출구 ) ― 예술의전당 ―
-                          주택앞
-                        </p>
-                        <h6>서초 17</h6>
-                        <p>
-                          양재역 ( 3호선, 신분당선 1번 출구 ) ― 예술의전당 ―
-                          방배역 ( 2호선 1번 출구 ) ― 사당역 ( 2호선 1번 출구 )
-                        </p>
-                        <h6>서초 22</h6>
-                        <p>
-                          남부터미널역 ( 3호선 5번 출구 ) ― 예술의전당 ―
-                          국립국악원 ― 상문고 ― 서초중
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="center-line"></div>
-                      <div class="public-text">
-                        <h5>빨강버스</h5>
-                        <h6>1500-2</h6>
-                        <p>
-                          에버랜드 ― 외대입구 ― 예술의전당 ― 방배동 ― 래미안타워
-                          ― 사당역 ( 2호선, 4호선 3번 출구 )
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+                <h4>버스</h4>
               </li>
-              <li class="find-category-tab">
+              <li rel="tab3">
                 <i class="fa-solid fa-train-subway"></i>
-                <h4 class="category-tab-tit">지하철</h4>
-                <div class="public-way">
-                  <ul id="bySub">
-                    <li>
-                      <div class="center-line"></div>
-                      <div class="public-text">
-                        <h5>지하철 교통안내</h5>
-                        <h6>3호선</h6>
-                        <p>
-                          남부터미널(예술의전당)역 5번 출구 혹은 4번 출구 → 도보
-                          이동 (약 5~10분 소요) <br />
-                          남부터미널(예술의전당)역 5번 출구 → 예술의전당
-                          셔틀버스
-                          <br />
-                          남부터미널(예술의전당)역 5번 출구 → 초록버스 22번
-                          <br />
-                          양재역 1번 출구 → 초록버스 17번
-                        </p>
-                        <h6>2호선</h6>
-                        <p>서초역3번 출구 → 마을버스 서초11번</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+                <h4>지하철</h4>
               </li>
             </ul>
-            <div class="cut-line"></div>
-          </div>
-          <!-- 찾아오시는길 내용 -->
-          <!-- <div class="find-txt">
-            <div class="public-way">
-              <ul id="byCar">
-                <li>
-                  <div class="center-line"></div>
-                  <div class="public-text">
-                    <h5>음악당 주차장</h5>
-                    <p>
-                      콘서트홀, IBK챔버홀, 리사이틀홀, 서울서예박물관,
-                      한가람디자인미술관, 음악분수, 광장
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="center-line"></div>
-                  <div class="public-text">
-                    <h5>오페라 주차장</h5>
-                    <p>
-                      오페라극장, CJ 토월극장, 자유소극장, 서울서예박물관,
-                      한가람미술관, 한가람디자인미술관
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="center-line"></div>
-                  <div class="public-text">
-                    <h5>주차 안내 바로가기</h5>
-                    <a href="#">
-                      <p>http://www.sac.or.kr/SacHome/useguide/locationGuide</p>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-              <ul id="byBus">
-                <li>
-                  <div class="center-line"></div>
-                  <div class="public-text">
-                    <h5>셔틀버스</h5>
-                    <h6>운행노선</h6>
-                    <p>
-                      남부터미널역 5번 출구 마을버스 정류장 승차 → 전당 앞
-                      스타벅스 하차 <br />
-                      ※ 마지막 버스는 음악당 주차장에서 하차합니다.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="center-line-w"></div>
-                  <div class="public-text">
-                    <h6>운행시간</h6>
-                    <p>
-                      평일 : 저녁 6시 30분 ~ 7시 30분 <br />
-                      토ㆍ일ㆍ공휴일 : 오후 1시 30분 ~ 2시 30분 / 저녁 6시 30분
-                      ~ 7시 30분 <br />
-                      ※ 월요일과 공연없는 날에는 운행하지 않습니다. <br />
-                      ※ 오전 공연에는 운행하지 않습니다.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="center-line-w"></div>
-                  <div class="public-text">
-                    <h6>배차횟수</h6>
-                    <p>배차간격은 교통상황에 따라 변동됩니다.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="center-line-w"></div>
-                  <div class="public-text">
-                    <h6>승차장 안내</h6>
-                    <p>
-                      관련 법규에 의거, 예술의전당 셔틀버스는 사설운행에
-                      해당되어 도로변에 셔틀버스 이정표 설치나 버스 정류장에
-                      셔틀버스 안내문 부착이 불가함을 양지하여 주시기 바라며,
-                      예술의전당 셔틀버스 <br />는 항상 남부터미널 5번 출구
-                      마을버스 정류장에서 출발하오니 안심하시고 이용하시고
-                      바랍니다.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="center-line"></div>
-                  <div class="public-text">
-                    <h5>파랑버스</h5>
-                    <h6>405</h6>
-                    <p>
-                      염곡동 ― 양재역 ( 3호선,신분당선 1번 출구 ) ― 예술의전당 ―
-                      서초역 ( 2호선 3번 출구 ) ― 종로1가 ― 서울역
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="center-line"></div>
-                  <div class="public-text">
-                    <h5>초록버스</h5>
-                    <h6>5413</h6>
-                    <p>
-                      시흥 ― 금천경찰서 ― 사당역 ( 2호선, 4호선 6번 출구 ) ―
-                      예술의전당 ― 고속터미널
-                    </p>
-                    <h6>서초 11</h6>
-                    <p>
-                      롯데빌리지 ― 서초역 ( 2호선 3번 출구 ) ― 예술의전당 ―
-                      주택앞
-                    </p>
-                    <h6>서초 17</h6>
-                    <p>
-                      양재역 ( 3호선, 신분당선 1번 출구 ) ― 예술의전당 ― 방배역
-                      ( 2호선 1번 출구 ) ― 사당역 ( 2호선 1번 출구 )
-                    </p>
-                    <h6>서초 22</h6>
-                    <p>
-                      남부터미널역 ( 3호선 5번 출구 ) ― 예술의전당 ― 국립국악원
-                      ― 상문고 ― 서초중
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="center-line"></div>
-                  <div class="public-text">
-                    <h5>빨강버스</h5>
-                    <h6>1500-2</h6>
-                    <p>
-                      에버랜드 ― 외대입구 ― 예술의전당 ― 방배동 ― 래미안타워 ―
-                      사당역 ( 2호선, 4호선 3번 출구 )
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <ul id="bySub">
-                <li>
-                  <div class="center-line"></div>
-                  <div class="public-text">
-                    <h5>지하철 교통안내</h5>
-                    <h6>3호선</h6>
-                    <p>
-                      남부터미널(예술의전당)역 5번 출구 혹은 4번 출구 → 도보
-                      이동 (약 5~10분 소요) <br />
-                      남부터미널(예술의전당)역 5번 출구 → 예술의전당 셔틀버스
-                      <br />
-                      남부터미널(예술의전당)역 5번 출구 → 초록버스 22번 <br />
-                      양재역 1번 출구 → 초록버스 17번
-                    </p>
-                    <h6>2호선</h6>
-                    <p>서초역3번 출구 → 마을버스 서초11번</p>
-                  </div>
-                </li>
-              </ul>
+
+            <!-- 탭 내용 -->
+            <div class="tab_container">
+              <h3 class="d_active tab_drawer_heading" rel="tab1">승용차</h3>
+              <div id="tab1" class="tab_content">
+                <ul>
+                  <li>
+                    <div class="center-line"></div>
+                    <div class="public-text">
+                      <h5>음악당 주차장</h5>
+                      <p>
+                        콘서트홀, IBK챔버홀, 리사이틀홀, 서울서예박물관,
+                        한가람디자인미술관, 음악분수, 광장
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="center-line"></div>
+                    <div class="public-text">
+                      <h5>오페라 주차장</h5>
+                      <p>
+                        오페라극장, CJ 토월극장, 자유소극장, 서울서예박물관,
+                        한가람미술관, 한가람디자인미술관
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="center-line"></div>
+                    <div class="public-text">
+                      <h5>주차 안내 바로가기</h5>
+                      <a href="#">
+                        <p>
+                          http://www.sac.or.kr/SacHome/useguide/locationGuide
+                        </p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- #tab1 -->
+              <h3 class="tab_drawer_heading" rel="tab2">버스</h3>
+              <div id="tab2" class="tab_content">
+                <ul>
+                  <li>
+                    <div class="center-line"></div>
+                    <div class="public-text">
+                      <h5>셔틀버스</h5>
+                      <h6>운행노선</h6>
+                      <p>
+                        남부터미널역 5번 출구 마을버스 정류장 승차 → 전당 앞
+                        스타벅스 하차 <br />
+                        ※ 마지막 버스는 음악당 주차장에서 하차합니다.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="center-line-w"></div>
+                    <div class="public-text">
+                      <h6>운행시간</h6>
+                      <p>
+                        평일 : 저녁 6시 30분 ~ 7시 30분 <br />
+                        토ㆍ일ㆍ공휴일 : 오후 1시 30분 ~ 2시 30분 / 저녁 6시
+                        30분 ~ 7시 30분 <br />
+                        ※ 월요일과 공연없는 날에는 운행하지 않습니다. <br />
+                        ※ 오전 공연에는 운행하지 않습니다.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="center-line-w"></div>
+                    <div class="public-text">
+                      <h6>배차횟수</h6>
+                      <p>배차간격은 교통상황에 따라 변동됩니다.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="center-line-w"></div>
+                    <div class="public-text">
+                      <h6>승차장 안내</h6>
+                      <p>
+                        관련 법규에 의거, 예술의전당 셔틀버스는 사설운행에
+                        해당되어 도로변에 셔틀버스 이정표 설치나 버스 정류장에
+                        셔틀버스 안내문 부착이 불가함을 양지하여 주시기 바라며,
+                        예술의전당 셔틀버스
+                        <br />는 항상 남부터미널 5번 출구 마을버스 정류장에서
+                        출발하오니 안심하시고 이용하시고 바랍니다.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="center-line"></div>
+                    <div class="public-text">
+                      <h5>파랑버스</h5>
+                      <h6>405</h6>
+                      <p>
+                        염곡동 ― 양재역 ( 3호선,신분당선 1번 출구 ) ― 예술의전당
+                        ― 서초역 ( 2호선 3번 출구 ) ― 종로1가 ― 서울역
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="center-line"></div>
+                    <div class="public-text">
+                      <h5>초록버스</h5>
+                      <h6>5413</h6>
+                      <p>
+                        시흥 ― 금천경찰서 ― 사당역 ( 2호선, 4호선 6번 출구 ) ―
+                        예술의전당 ― 고속터미널
+                      </p>
+                      <h6>서초 11</h6>
+                      <p>
+                        롯데빌리지 ― 서초역 ( 2호선 3번 출구 ) ― 예술의전당 ―
+                        주택앞
+                      </p>
+                      <h6>서초 17</h6>
+                      <p>
+                        양재역 ( 3호선, 신분당선 1번 출구 ) ― 예술의전당 ―
+                        방배역 ( 2호선 1번 출구 ) ― 사당역 ( 2호선 1번 출구 )
+                      </p>
+                      <h6>서초 22</h6>
+                      <p>
+                        남부터미널역 ( 3호선 5번 출구 ) ― 예술의전당 ―
+                        국립국악원 ― 상문고 ― 서초중
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="center-line"></div>
+                    <div class="public-text">
+                      <h5>빨강버스</h5>
+                      <h6>1500-2</h6>
+                      <p>
+                        에버랜드 ― 외대입구 ― 예술의전당 ― 방배동 ― 래미안타워 ―
+                        사당역 ( 2호선, 4호선 3번 출구 )
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- #tab2 -->
+              <h3 class="tab_drawer_heading" rel="tab3">지하철</h3>
+              <div id="tab3" class="tab_content">
+                <ul>
+                  <li>
+                    <div class="center-line"></div>
+                    <div class="public-text">
+                      <h5>지하철 교통안내</h5>
+                      <h6>3호선</h6>
+                      <p>
+                        남부터미널(예술의전당)역 5번 출구 혹은 4번 출구 → 도보
+                        이동 (약 5~10분 소요) <br />
+                        남부터미널(예술의전당)역 5번 출구 → 예술의전당 셔틀버스
+                        <br />
+                        남부터미널(예술의전당)역 5번 출구 → 초록버스 22번 <br />
+                        양재역 1번 출구 → 초록버스 17번
+                      </p>
+                      <h6>2호선</h6>
+                      <p>서초역3번 출구 → 마을버스 서초11번</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- #tab3 -->
+              <!-- .tab_container -->
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
       <!-- footer -->
-      <footer data-include-path="./outline/footer.html"></footer>
+      <!-- <footer data-include-path="./outline/footer.html"></footer> -->
     </div>
   </body>
 </html>
