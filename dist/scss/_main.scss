@@ -149,120 +149,214 @@
         font-weight: 700;
         line-height: 120%;
       }
-      // 공연정보 영역
       .info-content {
-        display: flex;
-        justify-content: space-between;
         width: 100%;
         height: 500px;
         background: $mc;
-        padding: 50px 0px 0px 108px;
-        // 공연 아이콘
-        .info-perform-icon {
-          width: 70px;
-          height: 40px;
-          border: 1px solid $w;
-          border-radius: 20px;
-          padding: 3px 8px;
-          margin-bottom: 35px;
-          & p {
-            text-align: center;
-            color: $w;
-            /* Pretendard/regular-16 */
-            font-family: Pretendard;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-          }
-        }
-        // 공연 상세내용
-        .info-perform {
-          .h-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            margin-bottom: 15px;
-            & h4 {
-              margin-right: 20px;
-              color: $w;
-              /* Pretendard/bold-32 */
-              font-family: Pretendard;
-              font-size: 32px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 120%;
-            }
-            & h5 {
-              color: $w;
-              /* Pretendard/regular-20 */
-              font-family: Pretendard;
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 120%; /* 24px */
-            }
-          }
-          & p {
-            padding: 3px;
-            color: $w;
-            font-family: Pretendard;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-          }
-          .p-wrap {
-            display: flex;
-            .date-2 {
-              padding-right: 10px;
-              border-right: 1px solid $w;
-            }
-            .place {
-              padding-left: 10px;
-            }
-          }
-        }
-        .info-perform-slide {
-          position: absolute;
-          top: 135px;
-          right: -100px;
-          display: flex;
-          width: 900px;
-          height: 400px;
-        }
-      }
-      // 공연정보 슬라이드
-      .swiper-wrapper {
-        .swiper {
+
+        // slide
+        .carousel {
           width: 100%;
           height: 100%;
+          display: flex;
+          max-width: 100%;
+          max-height: 500px;
+          overflow: hidden;
+          position: relative;
         }
 
-        .swiper-slide {
-          font-size: 18px;
+        .carousel-item {
+          visibility: visible;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          justify-content: flex-end;
+          -webkit-align-items: center;
+          -webkit-justify-content: flex-end;
+          position: relative;
+          background-color: $mc;
+          flex-shrink: 0;
+          -webkit-flex-shrink: 0;
+          position: absolute;
+          z-index: 0;
+          transition: 0.6s all linear;
+        }
+
+        .carousel-item__info {
+          height: 100%;
           display: flex;
           justify-content: center;
-          align-items: center;
+          flex-direction: column;
+
+          display: -webkit-flex;
+          -webkit-justify-content: center;
+          -webkit-flex-direction: column;
+
+          order: 1;
+          left: 0;
+          margin: auto;
+          padding-left: 90px;
+          width: 80%;
         }
 
-        .swiper-slide img {
-          display: block;
-          width: 100%;
+        .carousel-item__image {
+          width: 70%;
           height: 100%;
-          object-fit: cover;
+          order: 2;
+          align-self: flex-end;
+          flex-basis: 60%;
+
+          -webkit-order: 2;
+          -webkit-align-self: flex-end;
+          -webkit-flex-basis: 60%;
+
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          transform: translateX(100%);
+          transition: 0.6s all ease-in-out;
+        }
+
+        // 서브 타이틀
+        .carousel-item__subtitle {
+          width: 7%;
+          height: 30px;
+          padding-top: 3px;
+          text-align: center;
+          font-family: Pretendard;
+          font-size: $ps;
+          font-style: normal;
+          font-weight: 300;
+          margin: 0;
+          color: #ffffff;
+          border: 1px solid $w;
+          border-radius: 30px;
+          // transform: translateY(25%);
+          // opacity: 0;
+          // visibility: hidden;
+          // transition: 0.4s all ease-in-out;
+        }
+        .carousel-item-tit-wrap {
+          display: flex;
+          align-items: center;
+          // 메인 타이틀
+          .carousel-item__title {
+            margin: 15px 0;
+            margin-right: 25px;
+            font-family: Pretendard;
+            font-size: $h3;
+            font-style: normal;
+            font-weight: 500;
+            color: $w;
+            transform: translateY(25%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.6s all ease-in-out;
+          }
+          .carousel-item__engtitle {
+            margin: 0;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            color: $w;
+            transform: translateY(25%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.6s all ease-in-out;
+          }
+        }
+
+        .carousel-item__description {
+          transform: translateY(25%);
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.6s all ease-in-out;
+          font-family: Pretendard;
+          font-size: $ps;
+          font-style: normal;
+          font-weight: 300;
+          color: $w;
+          line-height: 22px;
+          margin: 7px 0;
+        }
+
+        .carousel-item--1 .carousel-item__image {
+          background: url(../../images/main/slide-img1.jpg) no-repeat 0 0;
+        }
+
+        .carousel-item--2 .carousel-item__image {
+          background: url(../../images/main/slide-img2.jpg) no-repeat 0 0;
+        }
+
+        .carousel-item--3 .carousel-item__image {
+          background: url(../../images/main/slide-img3.png) no-repeat 0 0;
+        }
+
+        .carousel-item--4 .carousel-item__image {
+          background: url(../../images/main/slide-img4.png) no-repeat 0 0;
+        }
+
+        // .carousel-item__container {
+        // }
+
+        .carousel__nav {
+          position: absolute;
+          left: 80px;
+          z-index: 2;
+          background-color: $mc;
+          top: 400px;
+        }
+
+        .carousel__icon {
+          display: inline-block;
+          vertical-align: middle;
+          width: 16px;
+          fill: $w;
+        }
+
+        .carousel__arrow {
+          cursor: pointer;
+          display: inline-block;
+          padding: 11px 15px;
+          position: relative;
+        }
+
+        .carousel__arrow:nth-child(1):after {
+          content: "";
+          right: -3px;
+          position: absolute;
+          width: 1px;
+          background-color: $mc;
+          height: 14px;
+          top: 50%;
+          margin-top: -7px;
+        }
+
+        .active {
+          z-index: 1;
+          display: flex;
+          visibility: visible;
+        }
+
+        .active .carousel-item__subtitle,
+        .active .carousel-item__title,
+        .active .carousel-item__engtitle,
+        .active .carousel-item__description,
+        .active .carousel-item__btn {
+          transform: translateY(0);
+          opacity: 1;
+          transition: 0.6s all ease-in-out;
+          visibility: visible;
+        }
+
+        .active .carousel-item__image {
+          transition: 0.6s all ease-in-out;
+          transform: translateX(0);
         }
       }
-    }
-    .swiper-pagination {
-      position: absolute;
-      top: 360px;
-      left: -620px;
-      width: 100px;
-      height: 50px;
-    }
-    .swiper-pagination-bullet {
-      background: $w !important;
     }
   }
 

@@ -56,14 +56,19 @@
     />
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    /> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script defer src="./dist/js/include.js"></script>
     <script defer src="./dist/js/video.js"></script>
     <script defer src="./dist/js/comm.js"></script>
-    <script defer src="./dist/js/swiper.js"></script>
   </head>
   <body>
     <div id="u-skip">
@@ -150,22 +155,26 @@
           <div class="sns-wrap">
             <ul class="sns-lst">
               <li>
-                <a href="https://www.facebook.com/kballet1962">
+                <a target="_blank" href="https://www.facebook.com/kballet1962">
                   <img src="./images/comm/facebook.png" alt="" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/kballet1962/">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/kballet1962/"
+                >
                   <img src="./images/comm/instagram.png" alt="" />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/KN_BALLET">
+                <a target="_blank" href="https://twitter.com/KN_BALLET">
                   <img src="./images/comm/twitter.png" alt="" />
                 </a>
               </li>
               <li>
                 <a
+                  target="_blank"
                   href="https://www.youtube.com/channel/UCqXxaAUCdtML1POvdp3Zm1w"
                 >
                   <img src="./images/comm/youtube.png" alt="" />
@@ -226,96 +235,175 @@
             <div class="info-wrap">
               <h3>공연정보</h3>
               <div class="info-content">
-                <!-- 공연정보 상세내용 -->
-                <div class="info-perform">
-                  <div class="info-perform-icon">
-                    <p>공연</p>
+                <div class="carousel">
+                  <div class="carousel__nav">
+                    <span id="moveLeft" class="carousel__arrow">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="21"
+                        viewBox="0 0 11 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M10 20L0.999999 10.5L10 1"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <span id="moveRight" class="carousel__arrow">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="21"
+                        viewBox="0 0 11 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 1L10 10.5L1 20"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
                   </div>
-                  <div class="h-wrap">
-                    <h4>지젤</h4>
-                    <h5>Giselle</h5>
-                  </div>
-                  <div class="date">
-                    <p>2023.05.23 - 05.27</p>
-                  </div>
-                  <div class="p-wrap">
-                    <div class="date-2">
-                      <p>평일 19:30 / 토 15:00</p>
+                  <!-- 첫번째 슬라이드 -->
+                  <div class="carousel-item carousel-item--1">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                      <div class="carousel-item__container">
+                        <h2 class="carousel-item__subtitle">공연</h2>
+                        <div class="carousel-item-tit-wrap">
+                          <h1 class="carousel-item__title">지젤</h1>
+                          <h3 class="carousel-item__engtitle">Giselle</h3>
+                        </div>
+                        <p class="carousel-item__description">
+                          2023.05.23 - 05.27
+                        </p>
+                        <p class="carousel-item__description">
+                          평일 19:30 / 토 15:00 | 국립극장 해오름
+                        </p>
+                        <p class="carousel-item__description">
+                          120분 (1막 50분, 인터미션 20분, 2막 50분)
+                        </p>
+                      </div>
                     </div>
-                    <div class="place">
-                      <p>국립극장 해오름</p>
+                  </div>
+                  <!-- 두번째 슬라이드 -->
+                  <div class="carousel-item carousel-item--2">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                      <div class="carousel-item__container">
+                        <h2 class="carousel-item__subtitle">공연</h2>
+                        <div class="carousel-item-tit-wrap">
+                          <h1 class="carousel-item__title">고집쟁이 딸</h1>
+                          <h3 class="carousel-item__engtitle">
+                            La Fille mal gardée
+                          </h3>
+                        </div>
+                        <p class="carousel-item__description">
+                          2023.11.08 - 11.12
+                        </p>
+                        <p class="carousel-item__description">
+                          평일 19:30 / 토 15:00 19:00 / 일 15:00 | 예술의전당
+                          오페라극장
+                        </p>
+                        <p class="carousel-item__description">
+                          125분(1막 65분/휴식 20분/2막 40분) (예정)
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="time">
-                    <p>120분 (1막 50분, 인터미션 20분, 2막 50분)</p>
+                  <!-- 세번째 슬라이드 -->
+                  <div class="carousel-item carousel-item--3">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                      <div class="carousel-item__container">
+                        <h2 class="carousel-item__subtitle">공연</h2>
+                        <div class="carousel-item-tit-wrap">
+                          <h1 class="carousel-item__title">
+                            KNB Movement Series 8
+                          </h1>
+                          <h3 class="carousel-item__engtitle"></h3>
+                        </div>
+                        <p class="carousel-item__description">
+                          2023.07.01 - 07.02
+                        </p>
+                        <p class="carousel-item__description">
+                          토 / 일 15:00 | 예술의전당 CJ 토월극장
+                        </p>
+                        <p class="carousel-item__description">70분 예정</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 네번째 슬라이드 -->
+                  <div class="carousel-item carousel-item--4">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                      <div class="carousel-item__container">
+                        <h2 class="carousel-item__subtitle">공연</h2>
+                        <div class="carousel-item-tit-wrap">
+                          <h1 class="carousel-item__title">트리플 빌</h1>
+                          <h3 class="carousel-item__engtitle">Triple Bill</h3>
+                        </div>
+                        <p class="carousel-item__description">
+                          2023.08.25 - 08.27
+                        </p>
+                        <p class="carousel-item__description">
+                          금 19:30 / 토 14:00 19:00 / 일 14:00 | 예술의전당 CJ
+                          토월극장
+                        </p>
+                        <p class="carousel-item__description">
+                          1막 25분 휴식 20분 2막 17분 휴식 20분 3막 40분
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- 내부 슬라이드 -->
-                <div class="info-perform-slide">
-                  <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="./information.html">
-                          <img
-                            src="./images/main/공연정보 slide-1.png"
-                            alt="지젤"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-2.png"
-                            alt="무브먼트"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#">
-                          <img
-                            src="./images/main/공연정보 slide-3.png"
-                            alt="해설이있는전막발레해적"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-
-                  <!-- Swiper JS -->
-                  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-                  <!-- Initialize Swiper -->
-                  <script>
-                    var swiper = new Swiper(".mySwiper", {
-                      slidesPerView: 3,
-                      spaceBetween: 10,
-                      pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                      },
+                <!-- 슬라이드 스크립트 -->
+                <script>
+                  $(function () {
+                    $(".carousel-item").eq(0).addClass("active");
+                    var total = $(".carousel-item").length;
+                    var current = 0;
+                    $("#moveRight").on("click", function () {
+                      var next = current;
+                      current = current + 1;
+                      setSlide(next, current);
                     });
-                  </script>
-                </div>
+                    $("#moveLeft").on("click", function () {
+                      var prev = current;
+                      current = current - 1;
+                      setSlide(prev, current);
+                    });
+                    function setSlide(prev, next) {
+                      var slide = current;
+                      if (next > total - 1) {
+                        slide = 0;
+                        current = 0;
+                      }
+                      if (next < 0) {
+                        slide = total - 1;
+                        current = total - 1;
+                      }
+                      $(".carousel-item").eq(prev).removeClass("active");
+                      $(".carousel-item").eq(slide).addClass("active");
+                      setTimeout(function () {}, 800);
+
+                      console.log("current " + current);
+                      console.log("prev " + prev);
+                    }
+                  });
+                </script>
               </div>
             </div>
           </section>
+
           <!-- 발레단소개 & 공지사항 -->
           <section id="bbs">
             <div class="bbs-introduce">
