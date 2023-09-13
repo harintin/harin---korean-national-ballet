@@ -461,7 +461,7 @@ legend {
 #main #info .info-wrap .info-content {
   width: 100%;
   height: 500px;
-  background: #7d2426;
+  background-color: #7d2426;
 }
 #main #info .info-wrap .info-content .carousel {
   width: 100%;
