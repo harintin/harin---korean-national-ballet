@@ -1036,10 +1036,9 @@ legend {
   font-weight: 400;
   line-height: 120%;
 }
-.introduce-content .find-place .map-txt-wrap button a {
-  width: 125px;
-  height: 60px;
-  padding: 20px 40px;
+.introduce-content .find-place .map-txt-wrap .find-way {
+  width: 90px;
+  padding: 10px 40px;
   border: 2px solid #7d2426;
   border-radius: 60px;
   color: #7d2426;
@@ -1048,7 +1047,20 @@ legend {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+}
+.introduce-content .find-place .map-txt-wrap .find-way:hover {
+  width: 90px;
+  padding: 10px 40px;
+  border: 2px solid #7d2426;
+  border-radius: 60px;
+  background: #7d2426;
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  transition: ease-in 0.1s;
 }
 .introduce-content .find-place .find-tabs {
   padding: 0 110px;
@@ -1429,10 +1441,12 @@ legend {
 #info-main .info-goto .info-goto-btn a:hover {
   background: #7d2426;
   color: #fff;
+  transition: all 0.3s;
 }
 #info-main .info-goto .info-goto-btn-2 a:hover {
   background: #7d2426;
   color: #fff;
+  transition: all 0.3s;
 }
 #info-main .info-tabs-wrap {
   position: relative;
@@ -1448,6 +1462,7 @@ legend {
   height: 80px;
   background: #fff;
   border: 2px solid #fff;
+  border-radius: 20px 20px 0px 0px;
 }
 #info-main .info-tabs-wrap .info-tabs-item .info-tabs-tit h3 {
   box-sizing: border-box;
@@ -1458,6 +1473,16 @@ legend {
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
+}
+#info-main .info-tabs-wrap .info-tabs-item .info-tabs-tit:hover {
+  background: #7d2426;
+  border: 2px solid #7d2426;
+  border-radius: 20px 20px 0px 0px;
+  transition: ease-in 0.2s;
+  cursor: pointer;
+}
+#info-main .info-tabs-wrap .info-tabs-item .info-tabs-tit:hover h3 {
+  color: #fff;
 }
 #info-main .info-tabs-wrap .info-tabs-item.on .info-tabs-tit {
   width: 280px;
@@ -2464,6 +2489,7 @@ body {
 }
 #header .header-wrap nav .depth1-lst h2:hover {
   color: #7d2426;
+  transition: ease-in 0.3s;
 }
 #header .header-wrap nav .depth1-lst .depth2-lst {
   overflow: hidden;

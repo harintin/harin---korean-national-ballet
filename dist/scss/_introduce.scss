@@ -249,10 +249,9 @@
         font-weight: 400;
         line-height: 120%;
       }
-      button a {
-        width: 125px;
-        height: 60px;
-        padding: 20px 40px;
+      .find-way {
+        width: 90px;
+        padding: 10px 40px;
         border: 2px solid $mc;
         border-radius: 60px;
         color: $mc;
@@ -261,7 +260,20 @@
         font-size: $p;
         font-style: normal;
         font-weight: 600;
-        line-height: normal;
+      }
+      .find-way:hover {
+        width: 90px;
+        padding: 10px 40px;
+        border: 2px solid $mc;
+        border-radius: 60px;
+        background: $mc;
+        color: $w;
+        text-align: center;
+        font-family: Pretendard;
+        font-size: $p;
+        font-style: normal;
+        font-weight: 600;
+        transition: ease-in 0.1s;
       }
     }
 
@@ -432,4 +444,3 @@
     }
   }
 }
-

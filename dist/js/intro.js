@@ -28,13 +28,13 @@ $(".tab_drawer_heading").click(function () {
   $("ul.tabs li").removeClass("active");
   $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
 });
-
 /* Extra class "tab_last" 
 	   to add border to right side
 	   of last tab */
 $("ul.tabs li").last().addClass("tab_last");
 
 // nav
+
 $(function () {
   // nav
   // #gnb .link-depth1 을 클릭했을 때

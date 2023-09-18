@@ -83,6 +83,7 @@ body {
         }
         & h2:hover {
           color: $mc;
+          transition: ease-in 0.3s;
         }
 
         // depth 2
