@@ -1,18 +1,18 @@
 .main-content {
   width: 100%;
-  height: 3700px;
+  height: 192.7083vw;
   // video
   .video-wrap {
     position: relative;
-    width: 1500px;
-    height: 930px;
+    // width: 78.125vw;
+    height: 48.4375vw;
     & .video-logo {
       position: absolute;
-      top: 850px;
-      right: 30px;
+      top: 44.2708vw;
+      right: 1.5625vw;
       z-index: 10;
       & img {
-        width: 160px;
+        width: 8.3333vw;
         display: block;
         object-fit: cover;
       }
@@ -23,7 +23,7 @@
       left: 0;
       display: block;
       width: 100%;
-      height: 930px;
+      height: 48.4375vw;
       object-fit: cover;
     }
   }
@@ -31,15 +31,16 @@
 
 // main
 #main {
+  width: 100%;
   background: $w;
   // news letter area
   .newsletter-wrap {
     width: 100%;
-    height: 210px;
-    margin: 194px 0;
+    height: 10.9375vw;
+    margin: 10.1042vw 0;
 
     & h3 {
-      margin-left: 108px;
+      margin-left: 5.625vw;
       /* Pretendard/bold-36 */
       font-family: Pretendard;
       font-size: $h3;
@@ -48,7 +49,7 @@
       line-height: 120%; /* 43.2px */
     }
     & p {
-      margin: 7px 0px 34px 108px;
+      margin: 0.3646vw 0vw 1.7708vw 5.625vw;
       /* Pretendard/regular-20 */
       font-family: Pretendard;
       font-size: $p;
@@ -58,71 +59,71 @@
     }
     .newsletter-content {
       width: 100%;
-      height: 105px;
+      height: 5.4688vw;
       background: #f3f3f3;
       padding: 32px 110px;
       input#news-name {
-        width: 215px;
-        padding: 12px;
+        width: 11.1979vw;
+        padding: 0.625vw;
         background: $w;
-        margin-right: 25px;
+        margin-right: 1.3021vw;
         border: none;
         outline: none;
         &::placeholder {
           color: $gray-9;
           font-family: Pretendard;
-          font-size: 14px;
+          font-size: $pss;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
         }
       }
       input#news-email {
-        width: 355px;
-        padding: 12px;
+        width: 18.4896vw;
+        padding: 0.625vw;
         background: $w;
-        margin-right: 25px;
+        margin-right: 1.3021vw;
         border: none;
         outline: none;
         &::placeholder {
           color: $gray-9;
           font-family: Pretendard;
-          font-size: 14px;
+          font-size: $pss;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
         }
       }
       input#news-number {
-        width: 215px;
-        padding: 12px;
+        width: 11.1979vw;
+        padding: 0.625vw;
         background: $w;
-        margin-right: 120px;
+        margin-right: 6.25vw;
         border: none;
         outline: none;
 
         &::placeholder {
           color: $gray-9;
           font-family: Pretendard;
-          font-size: 14px;
+          font-size: $pss;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
         }
       }
       button {
-        width: 264px;
-        height: 53px;
-        border-radius: 26.5px;
-        border: 2px solid $mc;
-        background: #fff;
+        width: 13.75vw;
+        height: 2.7604vw;
+        border-radius: 1.3802vw;
+        border: 0.1042vw solid $mc;
+        background: $w;
 
         p {
           margin: 0;
           text-align: center;
           color: $mc;
           font-family: Pretendard;
-          font-size: 20px;
+          font-size: 1.0417vw;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
@@ -138,10 +139,10 @@
       position: relative;
       overflow: hidden;
       width: 100%;
-      margin: 194px 0;
+      margin: 10.1042vw 0;
       & h3 {
-        margin-left: 108px;
-        margin-bottom: 37px;
+        margin-left: 5.625vw;
+        margin-bottom: 1.9271vw;
         /* Pretendard/bold-36 */
         font-family: Pretendard;
         font-size: $h3;
@@ -151,7 +152,7 @@
       }
       .info-content {
         width: 100%;
-        height: 500px;
+        height: 26.0417vw;
         background-color: $mc;
 
         // slide
@@ -160,7 +161,7 @@
           height: 100%;
           display: flex;
           max-width: 100%;
-          max-height: 500px;
+          max-height: 26.0417vw;
           overflow: hidden;
           position: relative;
         }
@@ -196,7 +197,7 @@
           order: 1;
           left: 0;
           margin: auto;
-          padding-left: 90px;
+          padding-left: 4.6875vw;
           width: 80%;
         }
 
@@ -222,8 +223,8 @@
         // 서브 타이틀
         .carousel-item__subtitle {
           width: 7%;
-          height: 30px;
-          padding-top: 3px;
+          height: 1.5625vw;
+          padding-top: 0.1563vw;
           text-align: center;
           font-family: Pretendard;
           font-size: $ps;
@@ -232,7 +233,7 @@
           margin: 0;
           color: #ffffff;
           border: 1px solid $w;
-          border-radius: 30px;
+          border-radius: 1.5625vw;
           // transform: translateY(25%);
           // opacity: 0;
           // visibility: hidden;
@@ -243,8 +244,8 @@
           align-items: center;
           // 메인 타이틀
           .carousel-item__title {
-            margin: 15px 0;
-            margin-right: 25px;
+            margin: 0.7813vw 0;
+            margin-right: 1.3021vw;
             font-family: Pretendard;
             font-size: $h3;
             font-style: normal;
@@ -258,7 +259,7 @@
           .carousel-item__engtitle {
             margin: 0;
             font-family: Pretendard;
-            font-size: 20px;
+            font-size: $p;
             font-style: normal;
             font-weight: 400;
             color: $w;
@@ -279,7 +280,7 @@
           font-style: normal;
           font-weight: 300;
           color: $w;
-          line-height: 22px;
+          line-height: 1.375rem;
           margin: 7px 0;
         }
 
@@ -304,35 +305,35 @@
 
         .carousel__nav {
           position: absolute;
-          left: 80px;
+          left: 4.1667vw;
           z-index: 2;
           background-color: $mc;
-          top: 400px;
+          top: 20.8333vw;
         }
 
         .carousel__icon {
           display: inline-block;
           vertical-align: middle;
-          width: 16px;
+          width: 0.8333vw;
           fill: $w;
         }
 
         .carousel__arrow {
           cursor: pointer;
           display: inline-block;
-          padding: 11px 15px;
+          padding: 0.5729vw 0.7813vw;
           position: relative;
         }
 
         .carousel__arrow:nth-child(1):after {
           content: "";
-          right: -3px;
+          right: -0.1563vw;
           position: absolute;
-          width: 1px;
+          width: 0.0521vw;
           background-color: $mc;
-          height: 14px;
+          height: 0.7292vw;
           top: 50%;
-          margin-top: -7px;
+          margin-top: -0.3646vw;
         }
 
         .active {
@@ -365,18 +366,18 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 0 108px;
-    margin-bottom: 194px;
+    padding: 0 5.625vw;
+    margin-bottom: 10.1042vw;
 
     // 발레단소개 영역
     .bbs-introduce {
-      width: 580px;
-      height: 484px;
+      width: 30.2083vw;
+      height: 25.2083vw;
       & .bbs-introduce-tit {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 2.0833vw;
         & h3 {
           color: $b;
           /* Pretendard/bold-36 */
@@ -388,11 +389,11 @@
         }
         & p {
           position: relative;
-          padding-right: 20px;
+          padding-right: 1.0417vw;
           color: $txtDefult;
-          /* Pretendard/regular-15 */
+
           font-family: Pretendard;
-          font-size: 15px;
+          font-size: $d2;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -401,7 +402,7 @@
           content: ">";
           position: absolute;
           top: 0;
-          left: 78px;
+          left: 4.0625vw;
           right: 0;
           bottom: 0;
         }
@@ -414,13 +415,13 @@
     }
     // 공지사항 영역
     .bbs-notice {
-      width: 580px;
-      height: 484px;
+      width: 30.2083vw;
+      height: 25.2083vw;
       & .bbs-notice-tit {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 2.0833vw;
         & h3 {
           color: $b;
           /* Pretendard/bold-36 */
@@ -432,11 +433,11 @@
         }
         & p {
           position: relative;
-          padding-right: 20px;
+          padding-right: 1.0417vw;
           color: $txtDefult;
           /* Pretendard/regular-15 */
           font-family: Pretendard;
-          font-size: 15px;
+          font-size: $pss;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -445,7 +446,7 @@
           content: ">";
           position: absolute;
           top: 0;
-          left: 78px;
+          left: 4.0625vw;
           right: 0;
           bottom: 0;
         }
@@ -454,31 +455,31 @@
       .bbs-notice-txt {
         & .bold-line {
           width: 100%;
-          height: 1px;
+          height: 0.0521vw;
           background-color: $line-bold;
-          margin-bottom: 38px;
+          margin-bottom: 1.9792vw;
         }
         & .normal-line {
           width: 100%;
-          height: 1px;
+          height: 0.0521vw;
           background-color: $line-normal;
-          margin-bottom: 38px;
+          margin-bottom: 1.9792vw;
         }
         & .notice {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 38px;
+          margin-bottom: 1.9792vw;
           & .notice-icon {
             width: 11%;
-            height: 26px;
+            height: 1.3542vw;
             color: $w;
-            padding: 3px;
-            border-radius: 7px;
+            padding: 0.1563vw;
+            border-radius: 0.3646vw;
             text-align: center;
             background: $txtDefult;
             font-family: Pretendard;
-            font-size: 14px;
+            font-size: $pss;
             font-style: normal;
             font-weight: 400;
           }
@@ -495,7 +496,7 @@
               text-align: left;
               color: $b;
               font-family: Pretendard;
-              font-size: 16px;
+              font-size: $ps;
               font-style: normal;
               font-weight: 500;
             }
@@ -505,7 +506,7 @@
             color: $txtDefult;
             text-align: right;
             font-family: Pretendard;
-            font-size: 13px;
+            font-size: $psss;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -517,6 +518,15 @@
   #youtube {
     display: flex;
     justify-content: center;
-    margin-bottom: 194px;
+    margin-bottom: 10.1042vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #main {
+    width: 100%;
+  }
+  .container {
+    padding: 0;
   }
 }

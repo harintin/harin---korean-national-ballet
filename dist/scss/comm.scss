@@ -185,6 +185,19 @@ body {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .wrap {
+    width: 100%;
+  }
+  #header {
+    display: none;
+  }
+  .container {
+    width: 100vw;
+    padding: 0;
+  }
+}
+
 // footer
 
 #footer {
@@ -212,7 +225,7 @@ body {
       margin-right: 20px;
       color: $txtDefult;
       font-family: Pretendard;
-      font-size: 16px;
+      font-size: $ps;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -233,7 +246,7 @@ body {
     & .footer-add {
       color: $txtFooter;
       font-family: Pretendard;
-      font-size: 15px;
+      font-size: $fp;
       font-style: normal;
       font-weight: 400;
       line-height: 200%;
@@ -242,7 +255,7 @@ body {
       text-align: right;
       color: $txtFooter;
       font-family: Pretendard;
-      font-size: 15px;
+      font-size: $fp;
       font-style: normal;
       font-weight: 400;
       line-height: 200%;
@@ -253,7 +266,7 @@ body {
     & p {
       color: $txtFooter;
       font-family: Pretendard;
-      font-size: 15px;
+      font-size: $fp;
       font-style: normal;
       font-weight: 400;
       line-height: 200%;
