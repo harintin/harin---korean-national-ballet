@@ -1318,6 +1318,10 @@ legend {
   font-weight: 400;
 }
 
+#info-wrap {
+  min-height: 3500px;
+}
+
 #info-main {
   padding: 5% 0;
   margin-left: 400px;
