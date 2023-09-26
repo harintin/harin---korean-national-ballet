@@ -591,7 +591,7 @@ legend {
   left: 4.1667vw;
   z-index: 2;
   background-color: #7d2426;
-  top: 20.8333vw;
+  bottom: 50px;
 }
 #main #info .info-wrap .info-content .carousel__icon {
   display: inline-block;
@@ -889,12 +889,13 @@ legend {
     height: 24px;
   }
   #main #youtube .youtube-video {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
   #main #youtube .youtube-video iframe {
     width: 100%;
     height: 39.063vw;
+    margin: 0 auto;
   }
   .container {
     padding: 0;
@@ -1571,12 +1572,15 @@ legend {
   position: relative;
   display: flex;
   width: 1300px;
-  padding: 50px 90px;
+  margin: 50px 90px;
+  padding-top: 80px;
 }
 #info-main .info-tabs-wrap .info-tabs-item {
-  width: 25%;
+  width: 100%;
 }
 #info-main .info-tabs-wrap .info-tabs-item .info-tabs-tit {
+  position: absolute;
+  top: 0;
   width: 280px;
   height: 80px;
   background: #fff;
@@ -1592,6 +1596,15 @@ legend {
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
+}
+#info-main .info-tabs-wrap .info-tabs-item .tabs1 {
+  left: 0;
+}
+#info-main .info-tabs-wrap .info-tabs-item .tabs2 {
+  left: 280px;
+}
+#info-main .info-tabs-wrap .info-tabs-item .tabs3 {
+  left: 560px;
 }
 #info-main .info-tabs-wrap .info-tabs-item .info-tabs-tit:hover {
   background: #7d2426;
@@ -1621,10 +1634,6 @@ legend {
   font-weight: 500;
 }
 #info-main .info-tabs-wrap .info-tabs-cont {
-  position: absolute;
-  top: 130px;
-  left: 90px;
-  bottom: 0;
   width: 1287px;
 }
 #info-main .info-tabs-wrap .info-tabs-cont .cont-synopsis {
@@ -1712,13 +1721,6 @@ legend {
 #info-main .info-tabs-wrap .tabs-video {
   padding: 50px;
   width: 100%;
-}
-
-.tabs-area {
-  display: block;
-  background: #fff;
-  width: 100%;
-  min-height: 1600px;
 }
 
 .academy-intro {
@@ -2551,6 +2553,32 @@ legend {
 body {
   height: 100%;
   background: #fff;
+}
+
+#header-mobile {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(white, white 20%, transparent);
+  background-repeat: no-repeat;
+}
+#header-mobile .header-mobile-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header-mobile .header-mobile-wrap .mobile-logo a {
+  display: block;
+  color: transparent;
+  width: 50px;
+  height: 55px;
+  background: url(../../images/comm/mobile-logo.png) no-repeat 0 0;
 }
 
 #header {

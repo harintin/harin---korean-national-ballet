@@ -308,7 +308,7 @@
           left: 4.1667vw;
           z-index: 2;
           background-color: $mc;
-          top: 20.8333vw;
+          bottom: 50px;
         }
 
         .carousel__icon {
@@ -641,12 +641,13 @@
     }
     #youtube {
       .youtube-video {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
         // display: none;
         iframe {
           width: 100%;
           height: 39.063vw;
+          margin: 0 auto;
         }
       }
     }

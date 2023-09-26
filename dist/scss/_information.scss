@@ -153,11 +153,14 @@
     position: relative;
     display: flex;
     width: 1300px;
-    padding: 50px 90px;
+    margin: 50px 90px;
+    padding-top: 80px;
     // 비활성화 탭
     .info-tabs-item {
-      width: 25%;
+      width: 100%;
       .info-tabs-tit {
+        position: absolute;
+        top: 0;
         width: 280px;
         height: 80px;
         background: $w;
@@ -174,6 +177,15 @@
           font-style: normal;
           font-weight: 500;
         }
+      }
+      .tabs1 {
+        left: 0;
+      }
+      .tabs2 {
+        left: 280px;
+      }
+      .tabs3 {
+        left: 560px;
       }
       .info-tabs-tit:hover {
         background: $mc;
@@ -206,10 +218,10 @@
     }
     // 공연 디테일 내용
     .info-tabs-cont {
-      position: absolute;
-      top: 130px;
-      left: 90px;
-      bottom: 0;
+      // position: absolute;
+      // top: 130px;
+      // left: 90px;
+      // bottom: 0;
       width: 1287px;
       .cont-synopsis {
         display: flex;
@@ -302,9 +314,9 @@
     }
   }
 }
-.tabs-area {
-  display: block;
-  background: $w;
-  width: 100%;
-  min-height: 1600px;
-}
+// .tabs-area {
+//   display: block;
+//   background: $w;
+//   width: 100%;
+//   // min-height: 1600px;
+// }

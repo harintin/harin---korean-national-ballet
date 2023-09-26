@@ -24,6 +24,35 @@ body {
   background: $w;
 }
 
+// mobile header (max-width: 1024px)
+#header-mobile {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(white, white 20%, transparent);
+  background-repeat: no-repeat;
+  .header-mobile-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .mobile-logo {
+      a {
+        display: block;
+        color: transparent;
+        width: 50px;
+        height: 55px;
+        background: url(../../images/comm/mobile-logo.png) no-repeat 0 0;
+      }
+    }
+  }
+}
+
 // header
 #header {
   position: fixed;
