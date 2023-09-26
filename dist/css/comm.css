@@ -665,7 +665,7 @@ legend {
   padding-right: 1.0417vw;
   color: #333;
   font-family: Pretendard;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -674,13 +674,15 @@ legend {
   content: ">";
   position: absolute;
   top: 0;
-  left: 4.0625vw;
   right: 0;
   bottom: 0;
 }
 #main #bbs .bbs-introduce .bbs-introduce-txt {
   display: block;
   width: 100%;
+}
+#main #bbs .bbs-introduce .bbs-introduce-txt a {
+  color: transparent;
 }
 #main #bbs .bbs-notice {
   width: 30.2083vw;
@@ -716,7 +718,6 @@ legend {
   content: ">";
   position: absolute;
   top: 0;
-  left: 4.0625vw;
   right: 0;
   bottom: 0;
 }
@@ -785,8 +786,115 @@ legend {
 }
 
 @media screen and (max-width: 1024px) {
+  .main-content {
+    height: auto;
+  }
   #main {
     width: 100%;
+  }
+  #main .newsletter-wrap h3 {
+    line-height: 140%;
+  }
+  #main .newsletter-wrap p {
+    line-height: 180%;
+  }
+  #main .newsletter-wrap .newsletter-content {
+    height: auto;
+  }
+  #main .newsletter-wrap .newsletter-content input#news-name {
+    width: 20%;
+  }
+  #main .newsletter-wrap .newsletter-content input#news-email {
+    width: 30%;
+  }
+  #main .newsletter-wrap .newsletter-content input#news-number {
+    width: 20%;
+    margin-right: 3vw;
+  }
+  #main .newsletter-wrap .newsletter-content button {
+    width: 16vw;
+    height: 4vw;
+    border-radius: 3vw;
+  }
+  #main .newsletter-wrap .newsletter-content button p {
+    font-size: 1.3vw;
+  }
+  #main #info {
+    padding-top: 3vw;
+  }
+  #main #info .info-wrap {
+    overflow: visible;
+    height: 48.828vw;
+    margin: 0;
+  }
+  #main #info .info-wrap h3 {
+    line-height: 180%;
+  }
+  #main #info .info-wrap .info-content {
+    height: 100%;
+    margin: 0 auto;
+  }
+  #main #info .info-wrap .info-content .carousel-item__subtitle {
+    width: 40px;
+    height: 25px;
+  }
+  #main #info .info-wrap .info-content .carousel {
+    max-height: 100%;
+  }
+  #main #info .info-wrap .info-content .carousel .carousel__nav {
+    background: transparent;
+  }
+  #main #info .info-wrap .info-content .carousel .carousel-item__image {
+    width: 80%;
+    height: 100%;
+    background-size: cover;
+  }
+  #main #bbs {
+    display: block;
+    width: 100%;
+    padding: 0;
+    padding-top: 14vw;
+  }
+  #main #bbs .bbs-introduce {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  #main #bbs .bbs-introduce .bbs-introduce-tit h3 {
+    line-height: 180%;
+  }
+  #main #bbs .bbs-introduce .bbs-introduce-txt a {
+    color: transparent;
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 25px;
+    background: url(../../images/main/발레단소개-썸네일.png) no-repeat center;
+    background-size: cover;
+  }
+  #main #bbs .bbs-introduce .bbs-introduce-txt a img {
+    display: none;
+  }
+  #main #bbs .bbs-notice {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 90px;
+  }
+  #main #bbs .bbs-notice .bbs-notice-tit h3 {
+    line-height: 180%;
+  }
+  #main #bbs .bbs-notice .bbs-notice-txt .notice .notice-icon {
+    width: 70px;
+    height: 24px;
+  }
+  #main #youtube .youtube-video {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #main #youtube .youtube-video iframe {
+    width: 100%;
+    height: 39.063vw;
   }
   .container {
     padding: 0;
@@ -2600,21 +2708,19 @@ body {
 }
 #footer {
   position: absolute; /* Change from absolute to fixed */
-  bottom: -200px;
-  right: 70px;
-  width: 1400px;
-  height: 400px;
+  bottom: -10.526vw;
+  width: 73.684vw;
   background: #fff;
-  padding-left: 47px;
-  margin-left: 400px;
+  padding-left: 2.474vw;
+  margin-left: 21.053vw;
 }
 #footer .footer-brand {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.579vw;
 }
 #footer .footer-brand .footer-brand-img {
-  margin-right: 20px;
+  margin-right: 1.053vw;
 }
 #footer .footer-spon {
   display: flex;
@@ -2672,6 +2778,16 @@ body {
   line-height: 200%;
 }
 
+@media screen and (max-width: 1024px) {
+  #footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #footer .footer-line {
+    width: 100%;
+  }
+}
 .clear {
   clear: both;
   margin-bottom: 200px;
