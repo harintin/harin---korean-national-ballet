@@ -6,12 +6,15 @@
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
 // 공통
+$gridWidth: 1280px;
+$gridPadding: 0 90px;
 
 .wrap {
   position: relative;
   min-height: 100%;
-  padding-bottom: 400px;
+  // padding-bottom: 400px;
   box-sizing: border-box;
+  margin-left: 400px;
 }
 
 .container {
@@ -19,9 +22,20 @@
   padding: 0 0 0 400px;
 }
 
+main {
+  padding-top: 100px;
+}
+
 body {
   height: 100%;
   background: $w;
+}
+
+.inner {
+  width: 100%;
+  max-width: $gridWidth;
+  padding: $gridPadding;
+  // margin: 0 auto;
 }
 
 // mobile header (max-width: 1024px)
@@ -230,14 +244,14 @@ body {
 // footer
 
 #footer {
-  position: absolute; /* Change from absolute to fixed */
-  bottom: -10.526vw;
+  // position: absolute; /* Change from absolute to fixed */
+  // bottom: -10.526vw;
   // right: 3.684vw;
-  width: 73.684vw;
+  // width: 73.684vw;
   // height: 21.053vw;
   background: $w;
-  padding-left: 2.474vw;
-  margin-left: 21.053vw;
+  // padding-left: 2.474vw;
+  // margin-left: 21.053vw;
   & .footer-brand {
     display: flex;
     align-items: center;

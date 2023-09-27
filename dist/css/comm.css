@@ -1332,11 +1332,8 @@ legend {
   }
 }
 
-.perform-main {
-  margin-left: 400px;
-}
 .perform-main .perform-top {
-  padding: 100px 90px;
+  padding: 0 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1387,12 +1384,9 @@ legend {
   font-weight: 500;
   text-align: center;
 }
-.perform-main .perform-wrap {
-  padding: 0 90px;
-}
 .perform-main .perform-wrap .perform-lst ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .perform-main .perform-wrap .perform-lst ul li {
@@ -1412,7 +1406,7 @@ legend {
 .perform-main .perform-wrap .perform-lst ul li a:last-child {
   margin: 0;
 }
-.perform-main .perform-wrap .perform-lst ul li .perform-lst-txt h4 {
+.perform-main .perform-wrap .perform-lst ul li .perform-lst-txt strong {
   color: #000;
   font-family: Pretendard;
   font-size: 25px;
@@ -2541,8 +2535,8 @@ legend {
 .wrap {
   position: relative;
   min-height: 100%;
-  padding-bottom: 400px;
   box-sizing: border-box;
+  margin-left: 400px;
 }
 
 .container {
@@ -2550,9 +2544,19 @@ legend {
   padding: 0 0 0 400px;
 }
 
+main {
+  padding-top: 100px;
+}
+
 body {
   height: 100%;
   background: #fff;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 90px;
 }
 
 #header-mobile {
@@ -2735,12 +2739,7 @@ body {
   }
 }
 #footer {
-  position: absolute; /* Change from absolute to fixed */
-  bottom: -10.526vw;
-  width: 73.684vw;
   background: #fff;
-  padding-left: 2.474vw;
-  margin-left: 21.053vw;
 }
 #footer .footer-brand {
   display: flex;

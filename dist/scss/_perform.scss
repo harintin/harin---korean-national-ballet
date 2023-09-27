@@ -1,9 +1,7 @@
 .perform-main {
-  margin-left: 400px;
-
   // 공연정보 상단구역
   .perform-top {
-    padding: 100px 90px;
+    padding: 0 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,11 +51,11 @@
 
   // 공연정보 썸네일 구역
   .perform-wrap {
-    padding: 0 90px;
+    // padding: 0 90px;
     .perform-lst {
       ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         li {
           width: 300px;
@@ -75,7 +73,7 @@
             }
           }
           .perform-lst-txt {
-            h4 {
+            strong {
               color: $b;
               font-family: Pretendard;
               font-size: 25px;
