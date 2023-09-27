@@ -288,7 +288,6 @@ legend {
 
 .main-content {
   width: 100%;
-  height: 192.7083vw;
 }
 .main-content .video-wrap {
   position: relative;
@@ -324,10 +323,9 @@ legend {
 #main .newsletter-wrap {
   width: 100%;
   height: 10.9375vw;
-  margin: 10.1042vw 0;
+  margin: 5% 0;
 }
-#main .newsletter-wrap h3 {
-  margin-left: 5.625vw;
+#main .newsletter-wrap h2 {
   /* Pretendard/bold-36 */
   font-family: Pretendard;
   font-size: 2rem;
@@ -336,7 +334,7 @@ legend {
   line-height: 120%; /* 43.2px */
 }
 #main .newsletter-wrap p {
-  margin: 0.3646vw 0vw 1.7708vw 5.625vw;
+  margin: 0.3646vw 0vw 1.7708vw 0;
   /* Pretendard/regular-20 */
   font-family: Pretendard;
   font-size: 1.25rem;
@@ -346,15 +344,18 @@ legend {
 }
 #main .newsletter-wrap .newsletter-content {
   width: 100%;
-  height: 5.4688vw;
   background: #f3f3f3;
-  padding: 32px 110px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+#main .newsletter-wrap .newsletter-content .inner {
+  display: flex;
 }
 #main .newsletter-wrap .newsletter-content input#news-name {
-  width: 11.1979vw;
+  width: 23%;
   padding: 0.625vw;
   background: #fff;
-  margin-right: 1.3021vw;
+  margin-right: 4%;
   border: none;
   outline: none;
 }
@@ -375,10 +376,10 @@ legend {
   line-height: normal;
 }
 #main .newsletter-wrap .newsletter-content input#news-email {
-  width: 18.4896vw;
+  width: 28%;
   padding: 0.625vw;
   background: #fff;
-  margin-right: 1.3021vw;
+  margin-right: 4%;
   border: none;
   outline: none;
 }
@@ -399,10 +400,10 @@ legend {
   line-height: normal;
 }
 #main .newsletter-wrap .newsletter-content input#news-number {
-  width: 11.1979vw;
+  width: 23%;
   padding: 0.625vw;
   background: #fff;
-  margin-right: 6.25vw;
+  margin-right: 10%;
   border: none;
   outline: none;
 }
@@ -424,7 +425,7 @@ legend {
 }
 #main .newsletter-wrap .newsletter-content button {
   width: 13.75vw;
-  height: 2.7604vw;
+  height: 53px;
   border-radius: 1.3802vw;
   border: 0.1042vw solid #7d2426;
   background: #fff;
@@ -434,7 +435,7 @@ legend {
   text-align: center;
   color: #7d2426;
   font-family: Pretendard;
-  font-size: 1.0417vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -448,9 +449,8 @@ legend {
   width: 100%;
   margin: 10.1042vw 0;
 }
-#main #info .info-wrap h3 {
-  margin-left: 5.625vw;
-  margin-bottom: 1.9271vw;
+#main #info .info-wrap h2 {
+  margin-bottom: 34px;
   /* Pretendard/bold-36 */
   font-family: Pretendard;
   font-size: 2rem;
@@ -499,7 +499,7 @@ legend {
   order: 1;
   left: 0;
   margin: auto;
-  padding-left: 4.6875vw;
+  padding-left: 90px;
   width: 80%;
 }
 #main #info .info-wrap .info-content .carousel-item__image {
@@ -519,9 +519,8 @@ legend {
   transition: 0.6s all ease-in-out;
 }
 #main #info .info-wrap .info-content .carousel-item__subtitle {
-  width: 7%;
-  height: 1.5625vw;
-  padding-top: 0.1563vw;
+  width: 60px;
+  padding: 6px 0;
   text-align: center;
   font-family: Pretendard;
   font-size: 1rem;
@@ -588,9 +587,8 @@ legend {
 }
 #main #info .info-wrap .info-content .carousel__nav {
   position: absolute;
-  left: 4.1667vw;
+  left: 90px;
   z-index: 2;
-  background-color: #7d2426;
   bottom: 50px;
 }
 #main #info .info-wrap .info-content .carousel__icon {
@@ -636,22 +634,19 @@ legend {
 }
 #main #bbs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 0 5.625vw;
-  margin-bottom: 10.1042vw;
 }
 #main #bbs .bbs-introduce {
-  width: 30.2083vw;
-  height: 25.2083vw;
+  width: 48%;
 }
 #main #bbs .bbs-introduce .bbs-introduce-tit {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.0833vw;
+  margin-bottom: 34px;
 }
-#main #bbs .bbs-introduce .bbs-introduce-tit h3 {
+#main #bbs .bbs-introduce .bbs-introduce-tit h2 {
   color: #000;
   /* Pretendard/bold-36 */
   font-family: Pretendard;
@@ -684,17 +679,22 @@ legend {
 #main #bbs .bbs-introduce .bbs-introduce-txt a {
   color: transparent;
 }
+#main #bbs .bbs-introduce .bbs-introduce-txt a img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #main #bbs .bbs-notice {
-  width: 30.2083vw;
-  height: 25.2083vw;
+  width: 48%;
 }
 #main #bbs .bbs-notice .bbs-notice-tit {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.0833vw;
+  margin-bottom: 34px;
 }
-#main #bbs .bbs-notice .bbs-notice-tit h3 {
+#main #bbs .bbs-notice .bbs-notice-tit h2 {
   color: #000;
   /* Pretendard/bold-36 */
   font-family: Pretendard;
@@ -721,29 +721,31 @@ legend {
   right: 0;
   bottom: 0;
 }
-#main #bbs .bbs-notice .bbs-notice-txt .bold-line {
+#main #bbs .bbs-notice .bbs-notice-txt ul {
   width: 100%;
-  height: 0.0521vw;
-  background-color: #505050;
-  margin-bottom: 1.9792vw;
+  height: 400px;
+  border-top: 2px solid #505050;
+  border-bottom: 2px solid #505050;
+  margin-top: 16px;
 }
-#main #bbs .bbs-notice .bbs-notice-txt .normal-line {
-  width: 100%;
-  height: 0.0521vw;
-  background-color: #e9e9e9;
-  margin-bottom: 1.9792vw;
+#main #bbs .bbs-notice .bbs-notice-txt ul .notice {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  height: 100px;
+  border-bottom: 1px solid #e9e9e9;
 }
-#main #bbs .bbs-notice .bbs-notice-txt .notice {
+#main #bbs .bbs-notice .bbs-notice-txt ul .notice a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.9792vw;
+  width: 100%;
+  height: 100px;
 }
-#main #bbs .bbs-notice .bbs-notice-txt .notice .notice-icon {
-  width: 11%;
-  height: 1.3542vw;
+#main #bbs .bbs-notice .bbs-notice-txt ul .notice a .notice-icon {
+  width: 10%;
   color: #fff;
-  padding: 0.1563vw;
+  padding: 4px 0;
   border-radius: 0.3646vw;
   text-align: center;
   background: #333;
@@ -752,25 +754,20 @@ legend {
   font-style: normal;
   font-weight: 400;
 }
-#main #bbs .bbs-notice .bbs-notice-txt .notice .notice-txt {
+#main #bbs .bbs-notice .bbs-notice-txt ul .notice a .notice-txt {
   display: flex;
   width: 70%;
-}
-#main #bbs .bbs-notice .bbs-notice-txt .notice .notice-txt a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-#main #bbs .bbs-notice .bbs-notice-txt .notice .notice-txt a {
   text-align: left;
   color: #000;
   font-family: Pretendard;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-#main #bbs .bbs-notice .bbs-notice-txt .notice .notice-date {
-  width: 10%;
+#main #bbs .bbs-notice .bbs-notice-txt ul .notice a .notice-date {
   color: #333;
   text-align: right;
   font-family: Pretendard;
@@ -782,7 +779,16 @@ legend {
 #main #youtube {
   display: flex;
   justify-content: center;
-  margin-bottom: 10.1042vw;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding-top: 100px;
+}
+#main #youtube .youtube-video {
+  width: 100%;
+}
+#main #youtube .youtube-video iframe {
+  width: 100%;
+  height: 700px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -820,7 +826,7 @@ legend {
     font-size: 1.3vw;
   }
   #main #info {
-    padding-top: 3vw;
+    padding-top: 100px;
   }
   #main #info .info-wrap {
     overflow: visible;
@@ -835,14 +841,17 @@ legend {
     margin: 0 auto;
   }
   #main #info .info-wrap .info-content .carousel-item__subtitle {
-    width: 40px;
-    height: 25px;
+    width: 55px;
   }
   #main #info .info-wrap .info-content .carousel {
     max-height: 100%;
   }
   #main #info .info-wrap .info-content .carousel .carousel__nav {
     background: transparent;
+  }
+  #main #info .info-wrap .info-content .carousel .carousel-item__info {
+    width: auto;
+    padding: 0;
   }
   #main #info .info-wrap .info-content .carousel .carousel-item__image {
     width: 80%;
@@ -884,18 +893,16 @@ legend {
   #main #bbs .bbs-notice .bbs-notice-tit h3 {
     line-height: 180%;
   }
-  #main #bbs .bbs-notice .bbs-notice-txt .notice .notice-icon {
-    width: 70px;
-    height: 24px;
+  #main #bbs .bbs-notice .bbs-notice-txt ul .notice a .notice-icon {
+    width: 7%;
+    border-radius: 6px;
   }
-  #main #youtube .youtube-video {
+  #main #youtube {
     width: 80%;
-    margin: 0 auto;
   }
   #main #youtube .youtube-video iframe {
     width: 100%;
     height: 39.063vw;
-    margin: 0 auto;
   }
   .container {
     padding: 0;
@@ -1390,15 +1397,16 @@ legend {
   align-items: center;
 }
 .perform-main .perform-wrap .perform-lst ul li {
-  width: 300px;
-  height: 700px;
-  margin-right: 30px;
+  width: 24%;
+  height: 630px;
 }
 .perform-main .perform-wrap .perform-lst ul li a {
   display: block;
   margin-bottom: 40px;
 }
 .perform-main .perform-wrap .perform-lst ul li a img {
+  display: block;
+  width: 100%;
   padding: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1407,16 +1415,21 @@ legend {
   margin: 0;
 }
 .perform-main .perform-wrap .perform-lst ul li .perform-lst-txt strong {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
   color: #000;
   font-family: Pretendard;
-  font-size: 25px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
 }
 .perform-main .perform-wrap .perform-lst ul li .perform-lst-txt p {
   padding: 5px 0;
   font-family: Pretendard;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
 }
@@ -2541,7 +2554,6 @@ legend {
 
 .container {
   width: 100%;
-  padding: 0 0 0 400px;
 }
 
 main {
@@ -2726,18 +2738,6 @@ body {
      object-fit: cover;
 }
 
-@media screen and (max-width: 1024px) {
-  .wrap {
-    width: 100%;
-  }
-  #header {
-    display: none;
-  }
-  .container {
-    width: 100vw;
-    padding: 0;
-  }
-}
 #footer {
   background: #fff;
 }
@@ -2767,7 +2767,7 @@ body {
   margin-right: 20px;
 }
 #footer .footer-line {
-  width: 1401px;
+  width: 100%;
   height: 1px;
   background: #d9d9d9;
 }
@@ -2805,7 +2805,26 @@ body {
   line-height: 200%;
 }
 
+.clear {
+  clear: both;
+  margin-bottom: 200px;
+}
+
 @media screen and (max-width: 1024px) {
+  #header {
+    display: none;
+  }
+  .wrap {
+    width: 100%;
+    margin: 0;
+  }
+  .container {
+    width: 100vw;
+    padding: 0;
+  }
+  .inner {
+    padding: 0 8.789vw;
+  }
   #footer {
     width: 100%;
     margin: 0;
@@ -2814,8 +2833,4 @@ body {
   #footer .footer-line {
     width: 100%;
   }
-}
-.clear {
-  clear: both;
-  margin-bottom: 200px;
 }/*# sourceMappingURL=comm.css.map */

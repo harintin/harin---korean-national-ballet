@@ -19,7 +19,7 @@ $gridPadding: 0 90px;
 
 .container {
   width: 100%;
-  padding: 0 0 0 400px;
+  // padding: 0 0 0 400px;
 }
 
 main {
@@ -228,19 +228,6 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .wrap {
-    width: 100%;
-  }
-  #header {
-    display: none;
-  }
-  .container {
-    width: 100vw;
-    padding: 0;
-  }
-}
-
 // footer
 
 #footer {
@@ -278,7 +265,7 @@ body {
     }
   }
   & .footer-line {
-    width: 1401px;
+    width: 100%;
     height: 1px;
     background: $line-foot;
   }
@@ -317,7 +304,27 @@ body {
   }
 }
 
+.clear {
+  clear: both;
+  margin-bottom: 200px;
+}
+
 @media screen and (max-width: 1024px) {
+  #header {
+    display: none;
+    // visibility: hidden;
+  }
+  .wrap {
+    width: 100%;
+    margin: 0;
+  }
+  .container {
+    width: 100vw;
+    padding: 0;
+  }
+  .inner {
+    padding: 0 8.789vw;
+  }
   #footer {
     width: 100%;
     margin: 0;
@@ -326,9 +333,4 @@ body {
       width: 100%;
     }
   }
-}
-
-.clear {
-  clear: both;
-  margin-bottom: 200px;
 }
