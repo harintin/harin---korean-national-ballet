@@ -531,6 +531,8 @@
   }
 }
 
+// 미디어쿼리 1024px
+
 @media screen and (max-width: 1024px) {
   .main-content {
     height: auto;
@@ -567,7 +569,7 @@
       }
     }
     #info {
-      padding-top: 100px;
+      padding-top: 240px;
       .info-wrap {
         overflow: visible;
         height: 48.828vw;
@@ -578,8 +580,10 @@
         .info-content {
           height: 100%;
           margin: 0 auto;
+          // 서브타이틀
           .carousel-item__subtitle {
-            width: 55px;
+            width: 52px;
+            font-size: 14px;
           }
           .carousel {
             max-height: 100%;
@@ -594,6 +598,18 @@
               width: 80%;
               height: 100%;
               background-size: cover;
+            }
+            .carousel-item-tit-wrap {
+              margin: 20px 0;
+            }
+            .carousel-item__title {
+              font-size: $d1;
+            }
+            .carousel-item__engtitle {
+              font-size: $pss;
+            }
+            .carousel-item__description {
+              font-size: $psss;
             }
           }
         }

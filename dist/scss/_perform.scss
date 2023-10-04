@@ -51,15 +51,17 @@
 
   // 공연정보 썸네일 구역
   .perform-wrap {
-    // padding: 0 90px;
+    margin-bottom: 200px;
     .perform-lst {
       ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows: 2fr;
+        grid-gap: 29px;
+        row-gap: 100px;
         li {
-          width: 24%;
-          height: 630px;
+          width: 100%;
+          height: auto;
           a {
             display: block;
             margin-bottom: 40px;
@@ -93,6 +95,49 @@
               font-style: normal;
               font-weight: 400;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 미디어쿼리 1024px
+@media screen and (max-width: 1024px) {
+  #perform-main {
+    .perform-wrap {
+      margin-bottom: 200px;
+      .perform-lst {
+        ul {
+          display: grid;
+          grid-template-columns: 30% 30% 30%;
+          grid-template-rows: 2fr;
+          grid-gap: 20px;
+          row-gap: 90px;
+          li {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 미디어쿼리 770px
+@media screen and (max-width: 770px) {
+  #perform-main {
+    .perform-wrap {
+      .perform-lst {
+        ul {
+          display: grid;
+          grid-template-columns: 48% 48%;
+          grid-template-rows: 3fr;
+          grid-gap: 20px;
+          row-gap: 90px;
+          li {
+            width: 100%;
+            height: auto;
           }
         }
       }

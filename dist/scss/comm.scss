@@ -326,11 +326,21 @@ body {
     padding: 0 8.789vw;
   }
   #footer {
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: auto;
     padding: 0;
     .footer-line {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #footer {
+    .footer-spon {
+      p {
+        display: none;
+      }
     }
   }
 }

@@ -1,16 +1,10 @@
-#info-wrap {
-  min-height: 3500px;
-}
-
 #info-main {
-  padding: 5% 0;
-  margin-left: 400px;
   .info-top-wrap {
-    width: 1400px;
-    padding: 0 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    padding-top: 100px;
+    margin: auto;
     // 공연정보 이미지
     .info-top-img {
       width: 430px;
@@ -90,7 +84,7 @@
               font-weight: 700;
             }
             p {
-              padding-right: 60px;
+              // padding-right: 60px;
               color: $b;
               font-family: Pretendard;
               font-size: 16px;
@@ -104,14 +98,14 @@
     }
   }
   .info-goto {
-    padding-top: 80px;
     position: relative;
     .info-goto-btn {
       position: absolute;
       top: 40px;
-      left: 41%;
+      left: 48%;
       background: $w;
       a {
+        white-space: nowrap;
         border: 2px solid $mc;
         border-radius: 40px;
         padding: 20px 40px;
@@ -125,8 +119,9 @@
     .info-goto-btn-2 {
       position: absolute;
       top: 40px;
-      left: 58%;
+      left: 68%;
       a {
+        white-space: nowrap;
         border: 2px solid $mc;
         border-radius: 40px;
         padding: 20px 40px;
@@ -148,12 +143,13 @@
       transition: all 0.3s;
     }
   }
+
   // 탭 영역
   .info-tabs-wrap {
     position: relative;
     display: flex;
-    width: 1300px;
-    margin: 50px 90px;
+    width: 1280px;
+    margin-top: 160px;
     padding-top: 80px;
     // 비활성화 탭
     .info-tabs-item {
@@ -218,11 +214,7 @@
     }
     // 공연 디테일 내용
     .info-tabs-cont {
-      // position: absolute;
-      // top: 130px;
-      // left: 90px;
-      // bottom: 0;
-      width: 1287px;
+      width: 1280px;
       .cont-synopsis {
         display: flex;
         justify-content: center;
@@ -314,9 +306,88 @@
     }
   }
 }
-// .tabs-area {
-//   display: block;
-//   background: $w;
-//   width: 100%;
-//   // min-height: 1600px;
-// }
+@media screen and (max-width: 1024px) {
+  #info-main {
+    width: 85%;
+    .info-top-wrap {
+      width: 100%;
+      .info-top-img {
+        width: 44%;
+        margin-right: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          object-fit: cover;
+        }
+      }
+      .info-top-text {
+        width: 52%;
+        .info-top-lst {
+          .info-top-line {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .info-goto {
+      .info-goto-btn {
+        a {
+          padding: 12px 25px;
+        }
+      }
+      .info-goto-btn-2 {
+        left: 74%;
+        a {
+          padding: 12px 25px;
+        }
+      }
+    }
+    .info-tabs-wrap {
+      width: 100%;
+      .info-tabs-item {
+        .info-tabs-tit {
+          width: 240px;
+        }
+        .tabs1 {
+          left: 0;
+        }
+        .tabs2 {
+          left: 240px;
+        }
+        .tabs3 {
+          left: 480px;
+        }
+        .info-tabs-cont {
+          width: 100%;
+          .cont-synopsis {
+            width: 100%;
+            display: block;
+            img {
+              width: 100%;
+              object-fit: cover;
+              margin: auto;
+            }
+          }
+          .cont-synopsis-text {
+            height: 1300px;
+          }
+          .tabs-cont-gall {
+            width: 100%;
+          }
+          .tabs-video {
+            iframe {
+              width: 700px;
+              height: 400px;
+            }
+          }
+        }
+      }
+      .info-tabs-item.on {
+        .info-tabs-tit {
+          width: 240px;
+        }
+      }
+    }
+  }
+}
