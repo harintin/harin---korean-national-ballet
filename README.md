@@ -1,3 +1,5 @@
+## 개인 포트폴리오입니다.
+
 # list
 
 https://eehd80.github.io/-setting/!list.html
@@ -5,6 +7,7 @@ https://eehd80.github.io/-setting/!list.html
 파일 경로 샘플 : https://velog.io/@odada/%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%8F%B4%EB%8D%94-%EA%B2%BD%EB%A1%9C
 
 파일 이름 : 영문소문자, 한글 x, 띄어쓰기 x
+
 ## main
 
 https://eehd80.github.io/-setting/
