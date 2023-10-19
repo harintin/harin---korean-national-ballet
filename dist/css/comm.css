@@ -429,8 +429,6 @@ legend {
   border-radius: 1.3802vw;
   border: 0.1042vw solid #7d2426;
   background: #fff;
-}
-#main .newsletter-wrap .newsletter-content button p {
   margin: 0;
   text-align: center;
   color: #7d2426;
@@ -2835,7 +2833,6 @@ body {
   display: block;
   padding: 12px 0;
   color: #333;
-  /* Pretendard/regular-20 */
   font-family: Pretendard;
   font-size: 1.1rem;
   font-style: normal;
@@ -2846,7 +2843,6 @@ body {
   display: block;
   padding: 12px 0;
   color: #7d2426;
-  /* Pretendard/regular-20 */
   font-family: Pretendard;
   font-size: 1.1rem;
   font-style: normal;
